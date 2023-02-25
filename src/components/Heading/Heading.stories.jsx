@@ -16,7 +16,7 @@ export default {
   },
 };
 
-// ===================== LIGHT TEST
+// ================================= LIGHT TEST =================================
 export const InLightBG = (args) => <Heading {...args} />;
 
 InLightBG.args = {
@@ -28,8 +28,7 @@ InLightBG.parameters = {
     default: 'light',
   },
 };
-
-// ===================== DARK TEST
+// ================================= DARK TEST =================================
 export const InDarkBG = (args) => <Heading {...args} />;
 
 InDarkBG.args = {

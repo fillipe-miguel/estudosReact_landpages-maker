@@ -16,13 +16,14 @@ function Heading({ children, colorDarker, level, size, uppercase }) {
 }
 
 Heading.defaultProps = {
-  size: 'medium',
+  size: 'large',
   uppercase: false,
+  colorDarker: true,
 };
 
 Heading.propTypes = {
   children: P.string.isRequired,
-  colorDarker: P.bool.isRequired,
+  colorDarker: P.bool,
   level: P.oneOf(['1', '2', '3', '4', '5', '6']).isRequired,
   size: P.oneOf(['medium', 'large', 'xlarge', 'xxlarge', 'xxxlarge']),
   uppercase: P.bool,
