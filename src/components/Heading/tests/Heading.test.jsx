@@ -122,12 +122,12 @@ describe('<Heading />', () => {
 
   // ================================= Snapshot =================================
   it('Should match snapshot', () => {
-    render(
+    const {container} = render(
       <MyThemeProvider>
         <Heading level="1">SNAP</Heading>
       </MyThemeProvider>,
     );
 
-    expect(screen.getByText('SNAP')).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

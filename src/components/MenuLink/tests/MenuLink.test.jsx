@@ -35,7 +35,7 @@ describe('<MenuLink />', () => {
 
   // ================================= SNAPSHOT =================================
   it('should match snapshot', () => {
-    render(
+    const {container} = render(
       <MyThemeProvider>
         <MenuLink link="http://localhost" newTab>
           Teste
@@ -43,6 +43,6 @@ describe('<MenuLink />', () => {
       </MyThemeProvider>,
     );
 
-    expect(screen.getByRole('link', { name: 'Teste' })).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

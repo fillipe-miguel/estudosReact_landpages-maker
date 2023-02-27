@@ -25,14 +25,14 @@ describe('<TextComponent />', () => {
 
   // ================================= Snapshot =================================
   it('Match snapshot', () => {
-    render(
+    const { container } = render(
       <MyThemeProvider>
         <TextComponent>Teste</TextComponent>
       </MyThemeProvider>,
     );
 
     // FirstChild para não pegar a div de fora
-    expect(screen.getByText('Teste')).toMatchInlineSnapshot(`
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         font-size: 2.4rem;
       }
