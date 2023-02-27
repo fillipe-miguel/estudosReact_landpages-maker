@@ -1,17 +1,18 @@
 import P from 'prop-types';
 import React from 'react';
-import * as Styled from './style';
+// Styles
+import * as Styled from './styles';
 
 function Heading({ children, colorDarker, level, size, uppercase }) {
   return (
-    <Styled.Container
+    <Styled.HeadingRoot
       colorDarker={colorDarker}
       as={`h${level}`}
       size={size}
       uppercase={uppercase}
     >
       {children}
-    </Styled.Container>
+    </Styled.HeadingRoot>
   );
 }
 
@@ -22,11 +23,11 @@ Heading.defaultProps = {
 };
 
 Heading.propTypes = {
-  children: P.string.isRequired,
+  uppercase: P.bool,
   colorDarker: P.bool,
+  children: P.string.isRequired,
   level: P.oneOf(['1', '2', '3', '4', '5', '6']).isRequired,
   size: P.oneOf(['medium', 'large', 'xlarge', 'xxlarge', 'xxxlarge']),
-  uppercase: P.bool,
 };
 
 export default Heading;

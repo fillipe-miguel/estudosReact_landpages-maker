@@ -1,5 +1,5 @@
 /* eslint-disable react/function-component-definition */ // ISSO É PARA O ESLINT DEIXAR EU USAR ARROW FUNCTION
-import Heading from '.';
+import Heading from '..';
 
 export default {
   title: 'Heading',

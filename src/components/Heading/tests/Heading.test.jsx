@@ -1,10 +1,10 @@
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
 // Styles
-import MyThemeProvider from '../../styles/theme/MyThemeProvider';
-import theme from '../../styles/theme/theme';
+import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
+import theme from '../../../styles/theme/theme';
 // Components
-import Heading from '.';
+import Heading from '..';
 
 describe('<Heading />', () => {
   // ================================= test 1 =================================
