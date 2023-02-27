@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> Should match snapshot 1`] = `
+.c0 {
+  color: #000;
+  text-transform: none;
+  font-size: 3.2rem;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    font-size: 6.4rem;
+  }
+}
+
+<h1
+  class="c0"
+>
+  SNAP
+</h1>
+`;

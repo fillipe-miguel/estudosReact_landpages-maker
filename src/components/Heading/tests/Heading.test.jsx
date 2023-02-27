@@ -119,4 +119,15 @@ describe('<Heading />', () => {
       'text-transform': 'uppercase',
     });
   });
+
+  // ================================= Snapshot =================================
+  it('Should match snapshot', () => {
+    render(
+      <MyThemeProvider>
+        <Heading level="1">SNAP</Heading>
+      </MyThemeProvider>,
+    );
+
+    expect(screen.getByText('SNAP')).toMatchSnapshot();
+  });
 });
