@@ -34,7 +34,7 @@ describe('<MenuLink />', () => {
   });
 
   // ================================= SNAPSHOT =================================
-  it('should render with new tab atribute', () => {
+  it('should match snapshot', () => {
     render(
       <MyThemeProvider>
         <MenuLink link="http://localhost" newTab>
