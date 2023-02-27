@@ -22,7 +22,15 @@ const theme = {
       xxxlarge: '6.4rem',
     },
   },
-  media: {
+  spacings: {
+    xsmall: '8rem',
+    small: '1.6rem',
+    medium: '2.4rem',
+    large: '3.2rem',
+    xlarge: '4rem',
+    xxlarge: '4.8rem',
+  },
+  medias: {
     lteMedium: '(max-width: 768px)',
   },
 };

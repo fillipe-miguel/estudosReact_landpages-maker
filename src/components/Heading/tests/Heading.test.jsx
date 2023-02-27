@@ -20,7 +20,7 @@ describe('<Heading />', () => {
     // ! Checando estilo
     // Cor padrão | FontSize padrão
     expect(heading).toHaveStyle({
-      color: theme.colors.black,
+      color: theme.colors.primaryColor,
       'font-size': theme.fonts.sizes.large,
       'text-transform': 'none',
     });
@@ -97,7 +97,7 @@ describe('<Heading />', () => {
     // ! Checando estilo
     // Mudando a fonte quando a tela fica pequena
     expect(heading).toHaveStyleRule('font-size', theme.fonts.sizes.xlarge, {
-      media: theme.media.lteMedium,
+      media: theme.medias.lteMedium,
     });
   });
 

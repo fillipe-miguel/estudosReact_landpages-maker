@@ -2,7 +2,7 @@
 
 exports[`<Heading /> Should match snapshot 1`] = `
 .c0 {
-  color: #000;
+  color: #0A1128;
   text-transform: none;
   font-size: 3.2rem;
 }

@@ -6,7 +6,7 @@ export const HeadingRoot = styled.h1`
 
   // ================================= Para pegar as props =================================
   ${({ theme, colorDarker, size, uppercase }) => css`
-    color: ${colorDarker ? theme.colors.black : theme.colors.white};
+    color: ${colorDarker ? theme.colors.primaryColor : theme.colors.white};
 
     text-transform: ${uppercase ? 'uppercase' : 'none'};
 
