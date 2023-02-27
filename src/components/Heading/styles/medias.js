@@ -5,7 +5,7 @@ function medias(theme, props) {
     @media ${theme.medias.lteMedium} {
       font-size: ${props.size === 'xxxlarge'
         ? theme.fonts.sizes.xlarge
-        : theme.fonts.sizes.xxxlarge};
+        : theme.fonts.sizes[props.size]};
     }
   `;
 }
