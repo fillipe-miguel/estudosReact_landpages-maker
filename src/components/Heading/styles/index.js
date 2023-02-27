@@ -2,15 +2,17 @@ import styled, { css } from 'styled-components';
 import medias from './medias';
 
 export const HeadingRoot = styled.h1`
-  ${medias()}
-
   // ================================= Para pegar as props =================================
-  ${({ theme, colorDarker, size, uppercase }) => css`
-    color: ${colorDarker ? theme.colors.primaryColor : theme.colors.white};
+  ${({ theme, ...props }) => css`
+    ${medias(theme, props)}
 
-    text-transform: ${uppercase ? 'uppercase' : 'none'};
+    color: ${props.colorDarker
+      ? theme.colors.primaryColor
+      : theme.colors.white};
 
-    font-size: ${theme.fonts.sizes[size]};
+    text-transform: ${props.uppercase ? 'uppercase' : 'none'};
+
+    font-size: ${theme.fonts.sizes[props.size]};
   `}
 `;
 

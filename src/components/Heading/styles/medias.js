@@ -1,12 +1,11 @@
 import { css } from 'styled-components';
 
-function medias() {
+function medias(theme, props) {
   return css`
-    @media ${({ theme }) => theme.medias.lteMedium} {
-      font-size: ${({ theme, size }) =>
-        size === 'xxxlarge'
-          ? theme.fonts.sizes.xlarge
-          : theme.fonts.sizes.xxxlarge};
+    @media ${theme.medias.lteMedium} {
+      font-size: ${props.size === 'xxxlarge'
+        ? theme.fonts.sizes.xlarge
+        : theme.fonts.sizes.xxxlarge};
     }
   `;
 }
