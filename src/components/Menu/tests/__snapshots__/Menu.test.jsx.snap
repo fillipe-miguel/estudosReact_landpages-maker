@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> Should not render links 1`] = `
+.c3 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 > img {
+  max-height: 3rem;
+}
+
+.c7 {
+  color: #0A1128;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.c9 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  font-size: 2.4rem;
+  padding: 1.6rem;
+  color: #0A1128;
+}
+
+.c9::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background-color: #DC143C;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c9:hover::after {
+  left: 25%;
+  width: 50%;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #FFF;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.c1 > .c2 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 {
+  z-index: 6;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: #0A1128;
+  color: #FFF;
+}
+
+@media (max-width:768px) {
+  .c7 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c8 {
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    bottom: 0;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .c1 > .c2 {
+    display: grid;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+  }
+
+  .c1 .c6 {
+    padding-bottom: 3.2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 4.8rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+<div>
+  <button
+    aria-label="Open/Close Menu"
+    class="c0"
+    title="Open menu"
+  >
+    <svg
+      aria-label="Open menu icon"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      />
+    </svg>
+  </button>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2 c3"
+    >
+      <div
+        class="c4"
+      >
+        <a
+          class="c5"
+          href="#target"
+        >
+          <h2
+            class="c6 c7"
+          >
+            logo link
+          </h2>
+        </a>
+        <nav
+          aria-label="Main menu"
+          class="c8"
+        >
+          <a
+            class="c9"
+            href="https://www.google.com.br"
+            target="_blank"
+          >
+            Google
+          </a>
+          <a
+            class="c9"
+            href="https://youtube.com"
+            target="_blank"
+          >
+            YouTube
+          </a>
+          <a
+            class="c9"
+            href="https://github.com/fillipe-miguel"
+            target="_self"
+          >
+            My GitHub
+          </a>
+          <a
+            class="c9"
+            href="https://www.tiktok.com/pt-BR/"
+            target="_blank"
+          >
+            TikTok
+          </a>
+          <a
+            class="c9"
+            href="https://www.udemy.com/"
+            target="_blank"
+          >
+            Udemy
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+`;

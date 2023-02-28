@@ -8,7 +8,7 @@ import MenuNav from '..';
 // Mocks
 import { linksMock } from '../../../mocks/componentsMocks';
 
-describe('<NavLink />', () => {
+describe('<MenuNav />', () => {
   // ================================= Teste 1 =================================
   it('should render', () => {
     render(

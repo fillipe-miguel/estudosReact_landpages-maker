@@ -7,7 +7,7 @@ import * as Styled from './styles';
 
 function MenuNav({ links }) {
   return (
-    <Styled.MenuNavRoot>
+    <Styled.MenuNavRoot aria-label="Main menu">
       {links.map((link) => (
         <MenuLink key={link.link} link={link.link} newTab={link?.newTab}>
           {link.children}
