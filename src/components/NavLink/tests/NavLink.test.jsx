@@ -6,7 +6,8 @@ import theme from '../../../styles/theme/theme';
 // Component
 import NavLink from '..';
 // Mocks
-import linksMock from '../mocks/linksMock';
+import {linksMock} from '../../../mocks/componentsMocks';
+
 
 describe('<NavLink />', () => {
   // ================================= Teste 1 =================================
@@ -65,7 +66,7 @@ describe('<NavLink />', () => {
         <NavLink links={linksMock} />
       </MyThemeProvider>,
     );
-    
+
     expect(container.firstChild).toMatchSnapshot();
   });
 });

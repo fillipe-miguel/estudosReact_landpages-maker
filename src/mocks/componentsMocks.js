@@ -1,4 +1,4 @@
-export default [
+export const linksMock = [
   {
     link: 'https://www.google.com.br',
     children: 'Google',
@@ -25,3 +25,9 @@ export default [
     newTab: true,
   },
 ];
+
+export const logoDataMock = {
+  text: 'logo link',
+  link: '#target',
+  srcImage: '',
+};

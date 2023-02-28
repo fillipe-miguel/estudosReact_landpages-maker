@@ -1,5 +1,6 @@
 import NavLink from '..';
-import linksMock from '../mocks/linksMock'
+// Mocks
+import { linksMock } from '../../../mocks/componentsMocks';
 
 export default {
   title: 'NavLink',

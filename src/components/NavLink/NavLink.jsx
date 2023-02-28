@@ -1,4 +1,3 @@
-// TODO: Fazer os testes desse componente!
 import P from 'prop-types';
 import React from 'react';
 // Components
