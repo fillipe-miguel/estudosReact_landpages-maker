@@ -5,23 +5,23 @@ import MenuLink from '../MenuLink';
 // Styles
 import * as Styled from './styles';
 
-function NavLink({ links }) {
+function MenuNav({ links }) {
   return (
-    <Styled.NavLinkRoot>
+    <Styled.MenuNavRoot>
       {links.map((link) => (
         <MenuLink key={link.link} link={link.link} newTab={link?.newTab}>
           {link.children}
         </MenuLink>
       ))}
-    </Styled.NavLinkRoot>
+    </Styled.MenuNavRoot>
   );
 }
 
-NavLink.defaultProps = {
+MenuNav.defaultProps = {
   links: [],
 };
 
-NavLink.propTypes = {
+MenuNav.propTypes = {
   links: P.arrayOf(
     P.shape({
       link: P.string.isRequired,
@@ -31,4 +31,4 @@ NavLink.propTypes = {
   ),
 };
 
-export default NavLink;
+export default MenuNav;

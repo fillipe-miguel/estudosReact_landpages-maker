@@ -1,16 +1,15 @@
-import NavLink from '..';
+import MenuNav from '..';
 // Mocks
 import { linksMock } from '../../../mocks/componentsMocks';
 
 export default {
-  title: 'NavLink',
-  component: NavLink,
+  title: 'Menu Nav',
+  component: MenuNav,
   args: {
     links: linksMock,
   },
-  argsTypes: {},
 };
 
 export function Render01(args) {
-  return <NavLink {...args} />;
+  return <MenuNav {...args} />;
 }

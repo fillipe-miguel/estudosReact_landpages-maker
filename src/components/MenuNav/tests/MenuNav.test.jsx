@@ -4,17 +4,16 @@ import { render, screen } from '@testing-library/react';
 import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
 import theme from '../../../styles/theme/theme';
 // Component
-import NavLink from '..';
+import MenuNav from '..';
 // Mocks
-import {linksMock} from '../../../mocks/componentsMocks';
-
+import { linksMock } from '../../../mocks/componentsMocks';
 
 describe('<NavLink />', () => {
   // ================================= Teste 1 =================================
   it('should render', () => {
     render(
       <MyThemeProvider>
-        <NavLink links={linksMock} />
+        <MenuNav links={linksMock} />
       </MyThemeProvider>,
     );
 
@@ -25,7 +24,7 @@ describe('<NavLink />', () => {
   it('should render without links', () => {
     render(
       <MyThemeProvider>
-        <NavLink />
+        <MenuNav />
       </MyThemeProvider>,
     );
 
@@ -36,7 +35,7 @@ describe('<NavLink />', () => {
   it('should render with all links', () => {
     render(
       <MyThemeProvider>
-        <NavLink links={linksMock} />
+        <MenuNav links={linksMock} />
       </MyThemeProvider>,
     );
 
@@ -49,7 +48,7 @@ describe('<NavLink />', () => {
   it('should render with screen mobile', () => {
     render(
       <MyThemeProvider>
-        <NavLink links={linksMock} />
+        <MenuNav links={linksMock} />
       </MyThemeProvider>,
     );
 
@@ -61,9 +60,9 @@ describe('<NavLink />', () => {
   });
   // ================================= SNAPSHOT  =================================
   it('should match snapshot', () => {
-    const {container} = render(
+    const { container } = render(
       <MyThemeProvider>
-        <NavLink links={linksMock} />
+        <MenuNav links={linksMock} />
       </MyThemeProvider>,
     );
 
