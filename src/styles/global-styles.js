@@ -8,6 +8,11 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
   html {
     // Para fazer o rem legal 1rem = 10px
     font-size: 62.5%;
