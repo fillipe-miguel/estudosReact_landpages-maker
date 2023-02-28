@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 // Styles
-import * as StyledSectionContainer from '../../../organizers/SectionContainer/styles';
+import * as StyledSectionContainer from '../../../sections/SectionContainer/styles';
 import * as StyledHeading from '../../Heading/styles/index';
 // Medias
 

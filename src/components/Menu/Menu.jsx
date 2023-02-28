@@ -2,7 +2,7 @@ import P from 'prop-types';
 import React, { useState } from 'react';
 // Components
 import { MdOutlineClose, MdOutlineMenu } from 'react-icons/md';
-import SectionContainer from '../../organizers/SectionContainer';
+import SectionContainer from '../../sections/SectionContainer';
 import LogoLink from '../LogoLink';
 import MenuNav from '../MenuNav';
 // Styles
