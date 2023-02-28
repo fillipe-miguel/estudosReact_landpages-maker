@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LayoutGridColum /> should match snapshot 1`] = `
+.c5 {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 6.4rem;
+}
+
+.c6 {
+  font-size: 2.4rem;
+  color: #FFF;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c0 {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #0A1128;
+  background-color: #0A1128;
+  color: #FFF;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.c2 .c4 {
+  margin-bottom: 1.6rem;
+}
+
+.c3 {
+  min-width: 35rem;
+}
+
+.c7 {
+  max-width: 74rem;
+}
+
+@media (max-width:768px) {
+  .c5 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .c2 .c4 {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    min-width: auto;
+    margin-bottom: 3.2rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <h3
+          class="c4 c5"
+        >
+          Grid Two columns
+        </h3>
+        <p
+          class="c6"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit quam iusto aut dignissimos. Eveniet ullam, officia praesentium distinctio eius ut sequi commodi error molestias quibusdam nisi animi, suscipit recusandae.
+        </p>
+      </div>
+      <div
+        class="c7"
+      >
+        <img
+          alt="Grid Two columns"
+          class=""
+          src="public/assets/images/javascript.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

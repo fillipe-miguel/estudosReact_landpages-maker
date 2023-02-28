@@ -31,3 +31,5 @@ export const logoDataMock = {
   link: '#target',
   srcImage: '',
 };
+
+
