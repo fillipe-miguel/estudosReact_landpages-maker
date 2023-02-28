@@ -23,6 +23,22 @@ describe('<TextComponent />', () => {
     });
   });
 
+  // ================================= Render =================================
+  it('Should render with correct color font', () => {
+    render(
+      <MyThemeProvider>
+        <TextComponent colorDarker={false}>Teste</TextComponent>
+      </MyThemeProvider>,
+    );
+
+    const textComponent = screen.getByText('Teste');
+
+    // ! Checando estilo
+    expect(textComponent).toHaveStyle({
+      color: theme.colors.white,
+    });
+  });
+
   // ================================= Snapshot =================================
   it('Match snapshot', () => {
     const { container } = render(
@@ -35,6 +51,7 @@ describe('<TextComponent />', () => {
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         font-size: 2.4rem;
+        color: #0A1128;
       }
 
       <p

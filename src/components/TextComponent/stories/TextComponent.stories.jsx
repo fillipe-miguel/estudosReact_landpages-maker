@@ -11,9 +11,11 @@ export default {
   component: TextComponent,
   args: {
     children: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, rerum quisquam placeat nobis dolor suscipit quia adipisci sapiente. Magni minus blanditiis ratione aut possimus commodi nam eligendi quis id voluptate.`,
+    colorDarker: false,
   },
   argsTypes: {
     children: { type: 'string' },
+    colorDarker: { type: 'boolean' },
   },
 };
 
