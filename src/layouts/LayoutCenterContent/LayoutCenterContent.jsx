@@ -1,18 +1,21 @@
 import P from 'prop-types';
 import React from 'react';
-// Components
-import Heading from '../../components/Heading';
-import TextComponent from '../../components/TextComponent';
-// Styles
+
 import * as Styled from './styles';
-// Sections
-import SectionBackground from '../../sections/SectionBackground';
+
+import { Heading, TextComponent } from '../../components';
+import { SectionBackground } from '../../sections';
 
 function LayoutCenterContent({ title, html, setBackground }) {
   return (
     <SectionBackground setBackground={setBackground}>
       <Styled.LayoutCenterContentRoot>
-        <Heading size="xxlarge" level="3" uppercase colorDarker={!setBackground}>
+        <Heading
+          size="xxlarge"
+          level="3"
+          uppercase
+          colorDarker={!setBackground}
+        >
           {title}
         </Heading>
         <Styled.InnerHtml>

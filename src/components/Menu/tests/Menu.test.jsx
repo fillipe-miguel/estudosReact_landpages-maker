@@ -1,25 +1,26 @@
 /* eslint-disable no-undef */
 import { fireEvent, render, screen } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-import theme from '../../../styles/theme/theme';
-// Components
+
 import Menu from '..';
-// Mocks
-import { linksMock, logoDataMock } from '../../../mocks/componentsMocks';
+
+import * as mocks from '../../../mocks';
+import { MyThemeProvider, theme } from '../../../styles';
 
 describe('<Menu />', () => {
   // ================================= Teste 01 =================================
   it('Should render LogoLink and MenuNav', () => {
     render(
       <MyThemeProvider>
-        <Menu links={linksMock} logoData={logoDataMock} />
+        <Menu
+          links={mocks.components.links}
+          logoData={mocks.components.logoData}
+        />
       </MyThemeProvider>,
     );
 
     // ! Testando o se o LogoLink se encontra
     expect(
-      screen.queryByRole('heading', { name: logoDataMock.text }),
+      screen.queryByRole('heading', { name: mocks.components.logoData.text }),
     ).toBeInTheDocument();
 
     // ! Testando o se o MenuNav se encontra
@@ -32,7 +33,10 @@ describe('<Menu />', () => {
   it('Should render mobile Menu and the button Open/Close', () => {
     render(
       <MyThemeProvider>
-        <Menu links={linksMock} logoData={logoDataMock} />
+        <Menu
+          links={mocks.components.links}
+          logoData={mocks.components.logoData}
+        />
       </MyThemeProvider>,
     );
 
@@ -60,7 +64,10 @@ describe('<Menu />', () => {
   it('Should button Open/Close menu button work', () => {
     render(
       <MyThemeProvider>
-        <Menu links={linksMock} logoData={logoDataMock} />
+        <Menu
+          links={mocks.components.links}
+          logoData={mocks.components.logoData}
+        />
       </MyThemeProvider>,
     );
 
@@ -96,7 +103,10 @@ describe('<Menu />', () => {
   it('Should close menu clicking on container', () => {
     render(
       <MyThemeProvider>
-        <Menu links={linksMock} logoData={logoDataMock} />
+        <Menu
+          links={mocks.components.links}
+          logoData={mocks.components.logoData}
+        />
       </MyThemeProvider>,
     );
 
@@ -122,7 +132,7 @@ describe('<Menu />', () => {
   it('Should not render links', () => {
     render(
       <MyThemeProvider>
-        <Menu logoData={logoDataMock} />
+        <Menu logoData={mocks.components.logoData} />
       </MyThemeProvider>,
     );
 
@@ -136,7 +146,10 @@ describe('<Menu />', () => {
   it('Should not render links', () => {
     const { container } = render(
       <MyThemeProvider>
-        <Menu logoData={logoDataMock} links={linksMock} />
+        <Menu
+          logoData={mocks.components.logoData}
+          links={mocks.components.links}
+        />
       </MyThemeProvider>,
     );
 

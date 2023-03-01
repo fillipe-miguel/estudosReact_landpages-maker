@@ -1,10 +1,8 @@
 /* eslint-disable no-undef */
 import { render } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-import theme from '../../../styles/theme/theme';
-// Component
+
 import SectionBackground from '..';
+import { MyThemeProvider, theme } from '../../../styles';
 
 describe('<SectionBackground />', () => {
   // ================================= Teste 01 =================================

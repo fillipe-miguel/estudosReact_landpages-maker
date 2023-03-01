@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
-import * as HeadingStyled from '../../../components/Heading/styles';
+
+import { HeadingStyles } from '../../../components';
 
 export const LayoutGridColumnRoot = styled.div`
   ${({ theme }) => css`
@@ -8,7 +9,7 @@ export const LayoutGridColumnRoot = styled.div`
     align-items: center;
     gap: ${theme.spacings.xxlarge};
 
-    & ${HeadingStyled.HeadingRoot} {
+    & ${HeadingStyles.HeadingRoot} {
       margin-bottom: ${theme.spacings.small};
     }
   `}
@@ -19,7 +20,7 @@ export const LayoutGridColumnRoot = styled.div`
       text-align: center;
       grid-template-columns: 1fr;
 
-      & ${HeadingStyled.HeadingRoot} {
+      & ${HeadingStyles.HeadingRoot} {
         margin-bottom: ${theme.spacings.xlarge};
       }
     }

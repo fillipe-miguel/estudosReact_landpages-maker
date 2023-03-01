@@ -1,13 +1,13 @@
 import P from 'prop-types';
 import React, { useState } from 'react';
-// Components
 import { MdOutlineClose, MdOutlineMenu } from 'react-icons/md';
-import SectionContainer from '../../sections/SectionContainer';
+// Components
 import LogoLink from '../LogoLink';
 import MenuNav from '../MenuNav';
-// Styles
+
 import * as Styled from './styles';
-// Icons
+
+import { SectionContainer } from '../../sections';
 
 function Menu({ links = [], logoData }) {
   const [visible, setVisible] = useState(false);

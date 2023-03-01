@@ -1,12 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Menu /> Should not render links 1`] = `
-.c3 {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3.2rem;
-}
-
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -63,6 +57,12 @@ exports[`<Menu /> Should not render links 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c3 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
 }
 
 .c1 {

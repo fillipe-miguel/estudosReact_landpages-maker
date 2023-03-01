@@ -1,11 +1,8 @@
 import styled, { css } from 'styled-components';
-import medias from './medias';
 
 export const HeadingRoot = styled.h1`
   // ================================= Para pegar as props =================================
   ${({ theme, ...props }) => css`
-    ${medias(theme, props)}
-
     color: ${props.colorDarker
       ? theme.colors.primaryColor
       : theme.colors.white};
@@ -13,6 +10,15 @@ export const HeadingRoot = styled.h1`
     text-transform: ${props.uppercase ? 'uppercase' : 'none'};
 
     font-size: ${theme.fonts.sizes[props.size]};
+  `}
+
+  // ================================= Medias =================================
+  ${({ theme, ...props }) => css`
+    @media ${theme.medias.lteMedium} {
+      font-size: ${props.size === 'xxxlarge'
+        ? theme.fonts.sizes.xlarge
+        : theme.fonts.sizes[props.size]};
+    }
   `}
 `;
 

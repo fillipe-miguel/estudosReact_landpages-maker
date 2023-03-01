@@ -1,10 +1,9 @@
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-import theme from '../../../styles/theme/theme';
-// Component
+
 import TextComponent from '..';
+
+import { MyThemeProvider, theme } from '../../../styles';
 
 describe('<TextComponent />', () => {
   // ================================= Render =================================

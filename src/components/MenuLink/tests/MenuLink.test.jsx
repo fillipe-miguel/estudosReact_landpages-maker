@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-// Component
+
 import MenuLink from '..';
+
+import { MyThemeProvider } from '../../../styles';
 
 describe('<MenuLink />', () => {
   // ================================= Teste 01 =================================
@@ -35,7 +35,7 @@ describe('<MenuLink />', () => {
 
   // ================================= SNAPSHOT =================================
   it('should match snapshot', () => {
-    const {container} = render(
+    const { container } = render(
       <MyThemeProvider>
         <MenuLink link="http://localhost" newTab>
           Teste

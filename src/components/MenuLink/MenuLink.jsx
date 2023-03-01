@@ -1,6 +1,6 @@
 import P from 'prop-types';
 import React from 'react';
-// Styles
+
 import * as Styled from './styles';
 
 function MenuLink({ children, link, newTab }) {
@@ -22,5 +22,5 @@ MenuLink.propTypes = {
   link: P.string.isRequired,
   newTab: P.bool,
 };
- 
+
 export default MenuLink;

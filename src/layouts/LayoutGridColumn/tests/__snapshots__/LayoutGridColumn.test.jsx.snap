@@ -7,11 +7,6 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
   font-size: 6.4rem;
 }
 
-.c6 {
-  font-size: 1.6rem;
-  color: #FFF;
-}
-
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
@@ -31,6 +26,11 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
   background-color: #FFF;
   color: #0A1128;
   background-color: #0A1128;
+  color: #FFF;
+}
+
+.c6 {
+  font-size: 1.6rem;
   color: #FFF;
 }
 

@@ -1,19 +1,17 @@
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-import theme from '../../../styles/theme/theme';
-// Components
+
 import LayoutGridColumn from '..';
-// Mock
-import { layoutGridColumnMock } from '../../../mocks/layoutsMocks';
+
+import * as mocks from '../../../mocks';
+import { MyThemeProvider, theme } from '../../../styles';
 
 describe('<LayoutGridColum />', () => {
   // ================================= Teste 01 =================================
   it('Should render without background', () => {
     const { container } = render(
       <MyThemeProvider>
-        <LayoutGridColumn {...layoutGridColumnMock} />
+        <LayoutGridColumn {...mocks.layouts.layoutGridColumn} />
       </MyThemeProvider>,
     );
 
@@ -30,7 +28,7 @@ describe('<LayoutGridColum />', () => {
   it('Should render with background', () => {
     const { container } = render(
       <MyThemeProvider>
-        <LayoutGridColumn {...layoutGridColumnMock} setBackground />
+        <LayoutGridColumn {...mocks.layouts.layoutGridColumn} setBackground />
       </MyThemeProvider>,
     );
 
@@ -43,7 +41,7 @@ describe('<LayoutGridColum />', () => {
   it('should match snapshot', () => {
     const { container } = render(
       <MyThemeProvider>
-        <LayoutGridColumn {...layoutGridColumnMock} setBackground />
+        <LayoutGridColumn {...mocks.layouts.layoutGridColumn} setBackground />
       </MyThemeProvider>,
     );
 

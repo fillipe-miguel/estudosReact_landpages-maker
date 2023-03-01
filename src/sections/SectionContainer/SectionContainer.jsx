@@ -1,6 +1,6 @@
 import P from 'prop-types';
 import React from 'react';
-// Styles
+
 import * as Styled from './styles';
 
 function SectionContainer({ children }) {

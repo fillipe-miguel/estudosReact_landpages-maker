@@ -1,12 +1,12 @@
 import MenuNav from '..';
-// Mocks
-import { linksMock } from '../../../mocks/componentsMocks';
+
+import * as mocks from '../../../mocks';
 
 export default {
   title: 'Menu Nav',
   component: MenuNav,
   args: {
-    links: linksMock,
+    links: mocks.components.links,
   },
 };
 

@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-// Components
+
+import { MyThemeProvider } from '../../../styles';
+
 import LogoLink from '../LogoLink';
 
 describe('<LogoLink/>', () => {

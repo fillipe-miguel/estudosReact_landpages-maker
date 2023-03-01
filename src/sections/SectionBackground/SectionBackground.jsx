@@ -1,8 +1,7 @@
 import P from 'prop-types';
 import React from 'react';
-// Components
+
 import SectionContainer from '../SectionContainer';
-// Styles
 import * as Styled from './styles';
 
 function SectionBackground({ children, setBackground }) {

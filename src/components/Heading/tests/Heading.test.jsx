@@ -1,10 +1,9 @@
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-import theme from '../../../styles/theme/theme';
-// Components
+
 import Heading from '..';
+
+import { MyThemeProvider, theme } from '../../../styles';
 
 describe('<Heading />', () => {
   // ================================= test 1 =================================
@@ -122,7 +121,7 @@ describe('<Heading />', () => {
 
   // ================================= Snapshot =================================
   it('Should match snapshot', () => {
-    const {container} = render(
+    const { container } = render(
       <MyThemeProvider>
         <Heading level="1">SNAP</Heading>
       </MyThemeProvider>,

@@ -1,19 +1,17 @@
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-import theme from '../../../styles/theme/theme';
-// Component
+
 import MenuNav from '..';
-// Mocks
-import { linksMock } from '../../../mocks/componentsMocks';
+
+import * as mocks from '../../../mocks';
+import { MyThemeProvider, theme } from '../../../styles';
 
 describe('<MenuNav />', () => {
   // ================================= Teste 1 =================================
   it('should render', () => {
     render(
       <MyThemeProvider>
-        <MenuNav links={linksMock} />
+        <MenuNav links={mocks.components.links} />
       </MyThemeProvider>,
     );
 
@@ -35,20 +33,20 @@ describe('<MenuNav />', () => {
   it('should render with all links', () => {
     render(
       <MyThemeProvider>
-        <MenuNav links={linksMock} />
+        <MenuNav links={mocks.components.links} />
       </MyThemeProvider>,
     );
 
     const container = screen.getAllByRole('link');
 
-    expect(container).toHaveLength(linksMock.length);
+    expect(container).toHaveLength(mocks.components.links.length);
   });
 
   // ================================= Teste 4 =================================
   it('should render with screen mobile', () => {
     render(
       <MyThemeProvider>
-        <MenuNav links={linksMock} />
+        <MenuNav links={mocks.components.links} />
       </MyThemeProvider>,
     );
 
@@ -62,7 +60,7 @@ describe('<MenuNav />', () => {
   it('should match snapshot', () => {
     const { container } = render(
       <MyThemeProvider>
-        <MenuNav links={linksMock} />
+        <MenuNav links={mocks.components.links} />
       </MyThemeProvider>,
     );
 

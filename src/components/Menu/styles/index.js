@@ -1,8 +1,7 @@
 import styled, { css } from 'styled-components';
-// Styles
-import * as StyledSectionContainer from '../../../sections/SectionContainer/styles';
-import * as StyledHeading from '../../Heading/styles/index';
-// Medias
+
+import { SectionContainerStyles } from '../../../sections';
+import { HeadingStyles } from '../../Heading';
 
 // !TALVEZ TENHA QUE VOLTAR AQUI PARA MEXER NO HEADING
 
@@ -13,7 +12,7 @@ export const MenuRoot = styled.div`
   right: 0;
   left: 0;
 
-  & > ${StyledSectionContainer.SectionContainerRoot} {
+  & > ${SectionContainerStyles.SectionContainerRoot} {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -32,7 +31,7 @@ export const MenuRoot = styled.div`
       opacity: ${props.visible ? '1' : '0'};
       transition: all 0.3s ease-in-out;
 
-      & > ${StyledSectionContainer.SectionContainerRoot} {
+      & > ${SectionContainerStyles.SectionContainerRoot} {
         display: grid;
         align-items: center;
 
@@ -42,7 +41,7 @@ export const MenuRoot = styled.div`
         overflow-y: auto;
       }
 
-      & ${StyledHeading.HeadingRoot} {
+      & ${HeadingStyles.HeadingRoot} {
         padding-bottom: ${theme.spacings.large};
       }
     }

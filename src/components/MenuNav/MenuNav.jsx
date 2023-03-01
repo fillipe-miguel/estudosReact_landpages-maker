@@ -1,8 +1,8 @@
 import P from 'prop-types';
 import React from 'react';
-// Components
+
 import MenuLink from '../MenuLink';
-// Styles
+
 import * as Styled from './styles';
 
 function MenuNav({ links }) {

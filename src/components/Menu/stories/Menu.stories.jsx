@@ -1,13 +1,13 @@
 import Menu from '..';
-// Mocks
-import { linksMock, logoDataMock } from '../../../mocks/componentsMocks';
+
+import * as mocks from '../../../mocks';
 
 export default {
   title: 'Menu',
   component: Menu,
   args: {
-    links: linksMock,
-    logoData: logoDataMock,
+    links: mocks.components.links,
+    logoData: mocks.components.logoData,
   },
 };
 

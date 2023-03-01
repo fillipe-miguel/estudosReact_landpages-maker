@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LayoutCenterContent /> Should render with background set 1`] = `
-.c3 {
-  color: #0A1128;
-  text-transform: uppercase;
-  font-size: 4.8rem;
-}
-
-.c5 {
-  font-size: 1.6rem;
-  color: #0A1128;
-}
-
 .c2 {
   text-align: center;
   max-width: 58rem;
@@ -60,6 +49,12 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
   font-style: italic;
 }
 
+.c3 {
+  color: #0A1128;
+  text-transform: uppercase;
+  font-size: 4.8rem;
+}
+
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
@@ -77,6 +72,11 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFF;
+  color: #0A1128;
+}
+
+.c5 {
+  font-size: 1.6rem;
   color: #0A1128;
 }
 

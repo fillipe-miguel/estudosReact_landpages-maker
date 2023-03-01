@@ -1,10 +1,11 @@
 import LayoutGridColumn from '..';
-import { layoutGridColumnMock } from '../../../mocks/layoutsMocks';
+
+import * as mocks from '../../../mocks';
 
 export default {
   title: 'LayoutGridColumn',
   component: LayoutGridColumn,
-  args: layoutGridColumnMock,
+  args: mocks.layouts.layoutGridColumn,
 };
 
 export function Render01(args) {

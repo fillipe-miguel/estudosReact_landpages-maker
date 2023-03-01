@@ -1,10 +1,11 @@
 import LayoutCenterContent from '..';
-import { layoutCenterContentMock } from '../../../mocks/layoutsMocks';
+
+import * as mocks from '../../../mocks';
 
 export default {
   title: 'LayoutCenterContent',
   component: LayoutCenterContent,
-  args: layoutCenterContentMock,
+  args: mocks.layouts.layoutCenterContent,
   argsTypes: {},
 };
 

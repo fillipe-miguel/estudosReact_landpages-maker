@@ -1,19 +1,17 @@
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
-// Styles
-import MyThemeProvider from '../../../styles/theme/MyThemeProvider';
-import theme from '../../../styles/theme/theme';
-// Mocks
-import { layoutCenterContentMock } from '../../../mocks/layoutsMocks';
-// Components
+
 import LayoutCenterContent from '..';
+
+import * as mocks from '../../../mocks';
+import { MyThemeProvider, theme } from '../../../styles';
 
 describe('<LayoutCenterContent />', () => {
   // ================================= Test 01 =================================
   it('Should render default', () => {
     render(
       <MyThemeProvider>
-        <LayoutCenterContent {...layoutCenterContentMock} />
+        <LayoutCenterContent {...mocks.layouts.layoutCenterContent} />
       </MyThemeProvider>,
     );
 
@@ -27,7 +25,10 @@ describe('<LayoutCenterContent />', () => {
   it('Should render with background set', () => {
     const { container } = render(
       <MyThemeProvider>
-        <LayoutCenterContent {...layoutCenterContentMock} setBackground />
+        <LayoutCenterContent
+          {...mocks.layouts.layoutCenterContent}
+          setBackground
+        />
       </MyThemeProvider>,
     );
 
@@ -48,7 +49,7 @@ describe('<LayoutCenterContent />', () => {
   it('Should render with background set', () => {
     const { container } = render(
       <MyThemeProvider>
-        <LayoutCenterContent {...layoutCenterContentMock} />
+        <LayoutCenterContent {...mocks.layouts.layoutCenterContent} />
       </MyThemeProvider>,
     );
 

@@ -1,12 +1,10 @@
 import P from 'prop-types';
 import React from 'react';
-// Components
-import Heading from '../../components/Heading';
-import TextComponent from '../../components/TextComponent';
-// Sections
-import SectionBackground from '../../sections/SectionBackground';
-// Styles
+
 import * as Styled from './styles';
+
+import { Heading, TextComponent } from '../../components';
+import { SectionBackground } from '../../sections';
 
 function LayoutGridColumn({ title, text, setBackground, srcImage }) {
   return (
