@@ -13,28 +13,6 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
   font-size: 2.4rem;
 }
 
-.c1 {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3.2rem;
-}
-
-.c0 {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #FFF;
-  color: #0A1128;
-  background-color: #0A1128;
-  color: #FFF;
-}
-
 .c5 {
   font-size: 1.6rem;
   color: #FFF;
@@ -67,6 +45,28 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
   -webkit-transform: skew(-15deg);
   -ms-transform: skew(-15deg);
   transform: skew(-15deg);
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c0 {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #0A1128;
+  background-color: #0A1128;
+  color: #FFF;
 }
 
 @media (max-width:768px) {

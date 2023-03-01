@@ -7,28 +7,6 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
   font-size: 6.4rem;
 }
 
-.c1 {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3.2rem;
-}
-
-.c0 {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #FFF;
-  color: #0A1128;
-  background-color: #0A1128;
-  color: #FFF;
-}
-
 .c6 {
   font-size: 1.6rem;
   color: #FFF;
@@ -54,6 +32,28 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
 
 .c7 {
   max-width: 74rem;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c0 {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #0A1128;
+  background-color: #0A1128;
+  color: #FFF;
 }
 
 @media (max-width:768px) {

@@ -55,6 +55,11 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
   font-size: 4.8rem;
 }
 
+.c5 {
+  font-size: 1.6rem;
+  color: #0A1128;
+}
+
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
@@ -72,11 +77,6 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #FFF;
-  color: #0A1128;
-}
-
-.c5 {
-  font-size: 1.6rem;
   color: #0A1128;
 }
 

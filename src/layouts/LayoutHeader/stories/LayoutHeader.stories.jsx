@@ -1,10 +1,10 @@
-import Menu from '..';
+import LayoutHeader from '..';
 
 import * as mocks from '../../../mocks';
 
 export default {
-  title: 'Menu',
-  component: Menu,
+  title: 'LayoutHeader',
+  component: LayoutHeader,
   args: {
     links: mocks.components.links,
     logoData: mocks.components.logoData,
@@ -12,5 +12,5 @@ export default {
 };
 
 export function Render01(args) {
-  return <Menu {...args} />;
+  return <LayoutHeader {...args} />;
 }

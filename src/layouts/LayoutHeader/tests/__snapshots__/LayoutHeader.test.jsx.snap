@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Menu /> Should not render links 1`] = `
+exports[`<LayoutHeader /> Should not render links 1`] = `
+.c7 {
+  color: #0A1128;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,12 +20,6 @@ exports[`<Menu /> Should not render links 1`] = `
 
 .c5 > img {
   max-height: 3rem;
-}
-
-.c7 {
-  color: #0A1128;
-  text-transform: uppercase;
-  font-size: 2.4rem;
 }
 
 .c9 {

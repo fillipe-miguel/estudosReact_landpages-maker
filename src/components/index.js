@@ -1,5 +1,7 @@
 import Heading, { HeadingStyles } from './Heading';
-import Menu from './Menu';
+import LogoLink from './LogoLink';
+
+import MenuNav from './MenuNav';
 import TextComponent from './TextComponent';
 
-export { Heading, HeadingStyles, Menu, TextComponent };
+export { Heading, HeadingStyles, TextComponent, LogoLink, MenuNav };

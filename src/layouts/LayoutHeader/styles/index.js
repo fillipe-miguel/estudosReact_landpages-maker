@@ -1,11 +1,9 @@
 import styled, { css } from 'styled-components';
 
+import { HeadingStyles } from '../../../components';
 import { SectionContainerStyles } from '../../../sections';
-import { HeadingStyles } from '../../Heading';
 
-// !TALVEZ TENHA QUE VOLTAR AQUI PARA MEXER NO HEADING
-
-export const MenuRoot = styled.div`
+export const LayoutHeaderRoot = styled.div`
   position: fixed;
   z-index: 5;
   top: 0;
@@ -48,7 +46,7 @@ export const MenuRoot = styled.div`
   `}
 `;
 
-export const MenuContainer = styled.div`
+export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,3 +89,5 @@ export const ToggleMenuButton = styled.button`
     }
   `}
 `;
+
+export default LayoutHeaderRoot;

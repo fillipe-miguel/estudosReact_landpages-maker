@@ -37,6 +37,11 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
   font-size: 4.8rem;
 }
 
+.c4 {
+  font-size: 1.6rem;
+  color: #FFF;
+}
+
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
@@ -56,11 +61,6 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
   background-color: #FFF;
   color: #0A1128;
   background-color: #0A1128;
-  color: #FFF;
-}
-
-.c4 {
-  font-size: 1.6rem;
   color: #FFF;
 }
 

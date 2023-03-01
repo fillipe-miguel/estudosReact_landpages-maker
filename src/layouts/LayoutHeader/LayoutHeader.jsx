@@ -1,15 +1,13 @@
 import P from 'prop-types';
 import React, { useState } from 'react';
 import { MdOutlineClose, MdOutlineMenu } from 'react-icons/md';
-// Components
-import LogoLink from '../LogoLink';
-import MenuNav from '../MenuNav';
+
+import { LogoLink, MenuNav } from '../../components';
+import { SectionContainer } from '../../sections';
 
 import * as Styled from './styles';
 
-import { SectionContainer } from '../../sections';
-
-function Menu({ links = [], logoData }) {
+function LayoutHeader({ links = [], logoData }) {
   const [visible, setVisible] = useState(false);
 
   const toggleVisibility = () => setVisible((current) => !current);
@@ -30,31 +28,30 @@ function Menu({ links = [], logoData }) {
         )}
       </Styled.ToggleMenuButton>
 
-      <Styled.MenuRoot
+      <Styled.LayoutHeaderRoot
         visible={visible}
         onClick={() => {
           toggleVisibility();
         }}
       >
         <SectionContainer>
-          <Styled.MenuContainer>
+          <Styled.HeaderContainer>
             <LogoLink {...logoData} />
             <MenuNav links={links} />
-          </Styled.MenuContainer>
+          </Styled.HeaderContainer>
         </SectionContainer>
-      </Styled.MenuRoot>
+      </Styled.LayoutHeaderRoot>
     </>
   );
 }
 
-Menu.defaultProps = {};
+LayoutHeader.defaultProps = {
+  // Aqui as propriedades default
+};
 
-Menu.propTypes = {
+LayoutHeader.propTypes = {
   ...MenuNav.propTypes,
   logoData: P.shape(LogoLink.propTypes).isRequired,
 };
 
-export default Menu;
-
-// MdOutlineClose
-// MdOutlineMenu
+export default LayoutHeader;

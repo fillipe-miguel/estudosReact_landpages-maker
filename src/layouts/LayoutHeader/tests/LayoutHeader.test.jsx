@@ -1,17 +1,17 @@
 /* eslint-disable no-undef */
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import Menu from '..';
+import LayoutHeader from '..';
 
 import * as mocks from '../../../mocks';
 import { MyThemeProvider, theme } from '../../../styles';
 
-describe('<Menu />', () => {
+describe('<LayoutHeader />', () => {
   // ================================= Teste 01 =================================
   it('Should render LogoLink and MenuNav', () => {
     render(
       <MyThemeProvider>
-        <Menu
+        <LayoutHeader
           links={mocks.components.links}
           logoData={mocks.components.logoData}
         />
@@ -33,7 +33,7 @@ describe('<Menu />', () => {
   it('Should render mobile Menu and the button Open/Close', () => {
     render(
       <MyThemeProvider>
-        <Menu
+        <LayoutHeader
           links={mocks.components.links}
           logoData={mocks.components.logoData}
         />
@@ -64,7 +64,7 @@ describe('<Menu />', () => {
   it('Should button Open/Close menu button work', () => {
     render(
       <MyThemeProvider>
-        <Menu
+        <LayoutHeader
           links={mocks.components.links}
           logoData={mocks.components.logoData}
         />
@@ -103,7 +103,7 @@ describe('<Menu />', () => {
   it('Should close menu clicking on container', () => {
     render(
       <MyThemeProvider>
-        <Menu
+        <LayoutHeader
           links={mocks.components.links}
           logoData={mocks.components.logoData}
         />
@@ -132,7 +132,7 @@ describe('<Menu />', () => {
   it('Should not render links', () => {
     render(
       <MyThemeProvider>
-        <Menu logoData={mocks.components.logoData} />
+        <LayoutHeader logoData={mocks.components.logoData} />
       </MyThemeProvider>,
     );
 
@@ -146,7 +146,7 @@ describe('<Menu />', () => {
   it('Should not render links', () => {
     const { container } = render(
       <MyThemeProvider>
-        <Menu
+        <LayoutHeader
           logoData={mocks.components.logoData}
           links={mocks.components.links}
         />
