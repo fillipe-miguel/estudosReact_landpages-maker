@@ -3,7 +3,9 @@ module.exports = {
   collectCoverage: false,
   collectCoverageFrom: [
     'src/**/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/**/*index*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/mocks/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/**/*mock*.{js,jsx,ts,tsx}',
     '!<rootDir>/**/*Mock*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/styles/**/*.{js,jsx,ts,tsx}',
