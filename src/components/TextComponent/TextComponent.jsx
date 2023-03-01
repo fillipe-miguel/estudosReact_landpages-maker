@@ -5,9 +5,10 @@ import * as Styled from './styles';
 
 function TextComponent({ children, colorDarker }) {
   return (
-    <Styled.TextComponentRoot colorDarker={colorDarker}>
-      {children}
-    </Styled.TextComponentRoot>
+    <Styled.TextComponentRoot
+      dangerouslySetInnerHTML={{ __html: children }}
+      colorDarker={colorDarker}
+    />
   );
 }
 
