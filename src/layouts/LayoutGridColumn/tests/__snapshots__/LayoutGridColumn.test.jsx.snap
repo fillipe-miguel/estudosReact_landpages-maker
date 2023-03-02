@@ -8,7 +8,7 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
 }
 
 .c6 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: #FFF;
 }
 

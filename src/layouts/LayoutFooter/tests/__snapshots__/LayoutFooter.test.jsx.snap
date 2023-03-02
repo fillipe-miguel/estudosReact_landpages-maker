@@ -1,22 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LayoutFooter /> Should match snapshot 1`] = `
+.c3 {
+  font-size: 2.4rem;
+  color: #0A1128;
+}
+
 .c0 {
   height: 8rem;
   text-align: center;
-  font-size: 8rem;
   background-color: #FFF;
+  border-top: 1px solid #DDDDDD;
+}
+
+.c0 .c2 {
+  font-size: 1.6rem;
 }
 
 .c0 a {
   pointer-events: all !important;
   -webkit-text-decoration: underline !important;
   text-decoration: underline !important;
-}
-
-.c2 {
-  font-size: 1.6rem;
-  color: #0A1128;
 }
 
 .c1 {
@@ -32,7 +36,7 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
     class="c1"
   >
     <div
-      class="c2"
+      class="c2 c3"
     >
       <a
         href="#"

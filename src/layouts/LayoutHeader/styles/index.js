@@ -11,8 +11,8 @@ export const LayoutHeaderRoot = styled.header`
   left: 0;
 
   & > ${SectionContainerStyles.SectionContainerRoot} {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: ${({theme}) => theme.spacings.small};
+    padding-bottom: ${({theme}) => theme.spacings.small};;
   }
 
   ${({ theme }) => css`

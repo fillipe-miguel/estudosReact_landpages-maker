@@ -14,7 +14,7 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
 }
 
 .c5 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: #FFF;
 }
 

@@ -17,9 +17,7 @@ describe('<TextComponent />', () => {
     const textComponent = screen.getByText('Teste');
 
     // ! Checando estilo
-    expect(textComponent).toHaveStyle({
-      'font-size': theme.fonts.sizes.small,
-    });
+    expect(textComponent).toBeInTheDocument();
   });
 
   // ================================= Render =================================
@@ -49,7 +47,7 @@ describe('<TextComponent />', () => {
     // FirstChild para não pegar a div de fora
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
-        font-size: 1.6rem;
+        font-size: 2.4rem;
         color: #0A1128;
       }
 

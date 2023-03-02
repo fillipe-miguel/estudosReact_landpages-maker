@@ -5,7 +5,7 @@ export const MenuLinkRoot = styled.a`
     display: inline-block;
     text-decoration: none;
     position: relative;
-    font-size: ${theme.fonts.sizes.medium};
+    font-size: ${theme.fonts.sizes.small};
     padding: ${theme.spacings.small};
     color: ${theme.colors.primaryColor};
 

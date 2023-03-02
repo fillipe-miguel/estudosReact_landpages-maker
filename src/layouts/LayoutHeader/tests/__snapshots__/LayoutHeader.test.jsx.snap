@@ -27,7 +27,7 @@ exports[`<LayoutHeader /> Should not render links 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   padding: 1.6rem;
   color: #0A1128;
 }
@@ -76,8 +76,8 @@ exports[`<LayoutHeader /> Should not render links 1`] = `
 }
 
 .c1 > .c2 {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
 .c4 {
