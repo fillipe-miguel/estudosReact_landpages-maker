@@ -1,7 +1,7 @@
 import LayoutFooter from '..';
 
 export default {
-  title: 'LayoutFooter',
+  title: 'Layouts/LayoutFooter',
   component: LayoutFooter,
   args: {
     html: '<a href="#">Que loucura isso ❤️ aqui!</a>',

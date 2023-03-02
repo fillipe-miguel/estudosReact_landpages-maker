@@ -3,7 +3,7 @@ import LayoutGridColumn from '..';
 import * as mocks from '../../../mocks';
 
 export default {
-  title: 'LayoutGridColumn',
+  title: 'Layouts/LayoutGridColumn',
   component: LayoutGridColumn,
   args: mocks.layouts.layoutGridColumn,
 };

@@ -7,7 +7,7 @@ const containerStyle = {
 };
 
 export default {
-  title: 'TextComponent',
+  title: 'Components/TextComponent',
   component: TextComponent,
   args: {
     children: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, rerum quisquam placeat nobis dolor suscipit quia adipisci sapiente. Magni minus blanditiis ratione aut possimus commodi nam eligendi quis id voluptate.`,

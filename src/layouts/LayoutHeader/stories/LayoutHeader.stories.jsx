@@ -3,7 +3,7 @@ import LayoutHeader from '..';
 import * as mocks from '../../../mocks';
 
 export default {
-  title: 'LayoutHeader',
+  title: 'Layouts/LayoutHeader',
   component: LayoutHeader,
   args: {
     links: mocks.components.links,

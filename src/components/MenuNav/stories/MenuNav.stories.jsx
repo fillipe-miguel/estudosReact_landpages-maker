@@ -3,7 +3,7 @@ import MenuNav from '..';
 import * as mocks from '../../../mocks';
 
 export default {
-  title: 'Menu Nav',
+  title: 'Components/Menu Nav',
   component: MenuNav,
   args: {
     links: mocks.components.links,

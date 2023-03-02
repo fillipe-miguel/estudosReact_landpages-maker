@@ -2,7 +2,7 @@
 import Heading from '..';
 
 export default {
-  title: 'Heading',
+  title: 'Components/Heading',
   component: Heading,
   args: {
     children: 'Meu titulo funcionando!!',

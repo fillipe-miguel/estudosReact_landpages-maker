@@ -3,7 +3,7 @@ import LayoutCenterContent from '..';
 import * as mocks from '../../../mocks';
 
 export default {
-  title: 'LayoutCenterContent',
+  title: 'Layouts/LayoutCenterContent',
   component: LayoutCenterContent,
   args: mocks.layouts.layoutCenterContent,
   argsTypes: {},
