@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GoTop /> Should render default 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A1128;
+  border-radius: 1rem;
+  border: 2px solid #FFF;
+  bottom: 5rem;
+  color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.4rem;
+  height: 4rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  right: 2rem;
+  opacity: 0.5;
+  z-index: 6;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 4rem;
+}
+
+.c0:hover {
+  opacity: 1;
+  border-color: #DC143C;
+  box-shadow: 0px 0px 8px 1px #DC143C;
+  color: #DC143C;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.c0:hover > :first-child {
+  -webkit-animation: shakeUpDown 0.7s ease-in-out infinite;
+  animation: shakeUpDown 0.7s ease-in-out infinite;
+}
+
+<a
+  aria-label="Button go to top"
+  class="c0"
+  href="#"
+  title="Voltar ao topo"
+>
+  <svg
+    fill="currentColor"
+    height="1em"
+    stroke="currentColor"
+    stroke-width="0"
+    viewBox="0 0 24 24"
+    width="1em"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0h24v24H0V0z"
+      fill="none"
+    />
+    <path
+      d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+    />
+  </svg>
+</a>
+`;

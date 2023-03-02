@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
   html {
     // Para fazer o rem legal 1rem = 10px
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   body {
