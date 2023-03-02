@@ -84,11 +84,11 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
       >
         My grid gallery
       </h2>
-      <p
+      <div
         class="c4"
       >
         Aqui vai ter várias imagens e coisas legais ablublé ablubléablubléablubléablubléablubléablublé.....
-      </p>
+      </div>
     </div>
     <div
       class="c5"

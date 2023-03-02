@@ -205,7 +205,7 @@ exports[`<LayoutHeader /> Should not render links 1`] = `
       />
     </svg>
   </button>
-  <div
+  <header
     class="c1"
   >
     <div
@@ -266,6 +266,6 @@ exports[`<LayoutHeader /> Should not render links 1`] = `
         </nav>
       </div>
     </div>
-  </div>
+  </header>
 </div>
 `;

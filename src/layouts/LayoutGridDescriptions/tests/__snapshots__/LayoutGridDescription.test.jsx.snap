@@ -95,11 +95,11 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
       >
         My grid
       </h2>
-      <p
+      <div
         class="c5"
       >
         Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-      </p>
+      </div>
     </div>
     <div
       class="c6"
@@ -112,11 +112,11 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
         >
           Teste 1
         </h3>
-        <p
+        <div
           class="c5"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-        </p>
+        </div>
       </div>
       <div
         class="c7"
@@ -126,11 +126,11 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
         >
           Teste 2
         </h3>
-        <p
+        <div
           class="c5"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-        </p>
+        </div>
       </div>
       <div
         class="c7"
@@ -140,11 +140,11 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
         >
           Teste 3
         </h3>
-        <p
+        <div
           class="c5"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-        </p>
+        </div>
       </div>
     </div>
   </div>

@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { HeadingStyles } from '../../../components';
 import { SectionContainerStyles } from '../../../sections';
 
-export const LayoutHeaderRoot = styled.div`
+export const LayoutHeaderRoot = styled.header`
   position: fixed;
   z-index: 5;
   top: 0;

@@ -53,11 +53,11 @@ describe('<TextComponent />', () => {
         color: #0A1128;
       }
 
-      <p
+      <div
         class="c0"
       >
         Teste
-      </p>
+      </div>
     `);
   });
 });

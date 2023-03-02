@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LayoutFooter /> Should match snapshot 1`] = `
+.c0 {
+  height: 8rem;
+  text-align: center;
+  font-size: 8rem;
+  background-color: #FFF;
+}
+
+.c0 a {
+  pointer-events: all !important;
+  -webkit-text-decoration: underline !important;
+  text-decoration: underline !important;
+}
+
+.c2 {
+  font-size: 1.6rem;
+  color: #0A1128;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+<footer
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <a
+        href="#"
+      >
+        Teste intenso aqui!
+      </a>
+    </div>
+  </div>
+</footer>
+`;
