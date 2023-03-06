@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { TextComponentStyles } from '../../../components';
+import { SectionContainerStyles } from '../../../sections';
 
 export const LayoutFooterRoot = styled.footer`
   ${({ theme }) => css`
@@ -13,9 +14,9 @@ export const LayoutFooterRoot = styled.footer`
       font-size: ${theme.fonts.sizes.small};
     }
 
-    a {
-      pointer-events: all !important;
-      text-decoration: underline !important;
+    & ${SectionContainerStyles.SectionContainerRoot} {
+      padding-top: 0;
+      padding-bottom: 0;
     }
   `}
 `;

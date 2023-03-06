@@ -59,12 +59,15 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
 .c6 {
   counter-reset: grid-counter;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
   gap: 3.2rem;
 }
 
 .c7 .c3 {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   left: 5rem;
   margin: 2.4rem 0;
 }
@@ -118,7 +121,7 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
 
 @media (max-width:768px) {
   .c1 {
-    padding: 1.6rem;
+    padding-inline: 1.6rem;
   }
 }
 

@@ -130,7 +130,7 @@ exports[`<LayoutHeader /> Should not render links 1`] = `
 
 @media (max-width:768px) {
   .c3 {
-    padding: 1.6rem;
+    padding-inline: 1.6rem;
   }
 }
 

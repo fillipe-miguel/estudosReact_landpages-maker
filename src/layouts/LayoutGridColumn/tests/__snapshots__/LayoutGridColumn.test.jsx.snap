@@ -117,7 +117,7 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
 
 @media (max-width:768px) {
   .c1 {
-    padding: 1.6rem;
+    padding-inline: 1.6rem;
   }
 }
 

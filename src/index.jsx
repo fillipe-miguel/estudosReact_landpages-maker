@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import Teste from './pages/Teste/Teste';
+
 import { MyThemeProvider } from './styles';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <MyThemeProvider>
-      <h1>Olá Mundo!</h1>
+      <Teste />
     </MyThemeProvider>
   </React.StrictMode>,
 );

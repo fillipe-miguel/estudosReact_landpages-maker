@@ -11,7 +11,7 @@ export const SectionContainerRoot = styled.div`
   // ================================= Medias =================================
   ${({ theme }) => css`
     @media ${theme.medias.lteMedium} {
-      padding: ${theme.spacings.small};
+      padding-inline: ${theme.spacings.small};
     }
   `}
 `;

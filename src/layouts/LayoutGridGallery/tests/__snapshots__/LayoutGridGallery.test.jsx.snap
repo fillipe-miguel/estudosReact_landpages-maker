@@ -107,7 +107,7 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
 
 @media (max-width:768px) {
   .c1 {
-    padding: 1.6rem;
+    padding-inline: 1.6rem;
   }
 }
 

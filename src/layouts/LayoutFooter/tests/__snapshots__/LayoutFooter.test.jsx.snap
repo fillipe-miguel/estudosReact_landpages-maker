@@ -1,43 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LayoutFooter /> Should match snapshot 1`] = `
-.c3 {
+.c4 {
   font-size: 1.6rem;
   color: #0A1128;
 }
 
-.c3 p {
+.c4 p {
   margin: 2.4rem 0;
 }
 
-.c3 a {
+.c4 a {
   font-weight: bolder;
   color: #DC143C;
 }
 
-.c3 a:hover {
+.c4 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c3 h1,
-.c3 h2,
-.c3 h3,
-.c3 h4,
-.c3 h5,
-.c3 h6 {
+.c4 h1,
+.c4 h2,
+.c4 h3,
+.c4 h4,
+.c4 h5,
+.c4 h6 {
   margin: 1.6rem 0;
 }
 
-.c3 ol,
-.c3 ul {
+.c4 ol,
+.c4 ul {
   margin: 1.6rem;
 }
 
-.c3 ol > li,
-.c3 ul > li {
+.c4 ol > li,
+.c4 ul > li {
   margin: 1.6rem 0;
   font-style: italic;
+}
+
+.c2 {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3.2rem;
 }
 
 .c0 {
@@ -47,26 +54,18 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
   border-top: 1px solid #DDDDDD;
 }
 
-.c0 .c2 {
+.c0 .c3 {
   font-size: 1.6rem;
 }
 
-.c0 a {
-  pointer-events: all !important;
-  -webkit-text-decoration: underline !important;
-  text-decoration: underline !important;
-}
-
-.c1 {
-  max-width: 120rem;
-  margin: 0 auto;
-  width: 100%;
-  padding: 3.2rem;
+.c0 .c1 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media (max-width:768px) {
-  .c1 {
-    padding: 1.6rem;
+  .c2 {
+    padding-inline: 1.6rem;
   }
 }
 
@@ -74,10 +73,10 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c1 c2"
   >
     <div
-      class="c2 c3"
+      class="c3 c4"
     >
       <a
         href="#"
