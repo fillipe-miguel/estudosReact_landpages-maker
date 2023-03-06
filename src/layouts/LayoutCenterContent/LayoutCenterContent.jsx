@@ -11,8 +11,8 @@ function LayoutCenterContent({ title, html, setBackground }) {
     <SectionBackground setBackground={setBackground}>
       <Styled.LayoutCenterContentRoot>
         <Heading
-          size="xxlarge"
-          level="3"
+          size="xxxlarge"
+          level="2"
           uppercase
           colorDarker={!setBackground}
         >

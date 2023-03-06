@@ -10,7 +10,17 @@ export const LayoutCenterContentRoot = styled.div`
 
 export const InnerHtml = styled.div`
   ${({ theme }) => css`
-    margin: ${theme.spacings.xxlarge} 0;
+    margin-top: ${theme.spacings.large};
+    text-align: justify;
+
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: center;
+    }
   `}
 `;
 

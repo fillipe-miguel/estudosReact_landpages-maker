@@ -39,6 +39,7 @@ export const TextComponentRoot = styled.p`
 
     & ol > li,
     ul > li {
+      margin: ${theme.spacings.small} 0;
       font-style: italic;
     }
   `}
