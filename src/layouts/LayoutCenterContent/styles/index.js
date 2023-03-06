@@ -11,34 +11,6 @@ export const LayoutCenterContentRoot = styled.div`
 export const InnerHtml = styled.div`
   ${({ theme }) => css`
     margin: ${theme.spacings.xxlarge} 0;
-
-    // ================================= Estilos do html =================================
-    & p {
-      margin: ${theme.spacings.medium} 0;
-    }
-
-    & a {
-      pointer-events: none;
-    }
-
-    & h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: ${theme.spacings.small} 0;
-    }
-
-    & ol,
-    ul {
-      margin: ${theme.spacings.small} ;
-    }
-
-    & ol > li,
-    ul > li {
-      font-style: italic;
-    }
   `}
 `;
 

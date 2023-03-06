@@ -10,7 +10,7 @@ function LayoutFooter({ html }) {
   return (
     <Styled.LayoutFooterRoot>
       <SectionContainer>
-        <TextComponent>{html}</TextComponent>
+        <TextComponent asHtml>{html}</TextComponent>
       </SectionContainer>
     </Styled.LayoutFooterRoot>
   );
