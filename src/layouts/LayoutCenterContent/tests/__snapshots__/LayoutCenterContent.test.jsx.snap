@@ -8,15 +8,8 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
 }
 
 .c4 {
-  margin: 4.8rem 0;
-}
-
-.c4 p {
-  margin: 2.4rem 0;
-}
-
-.c4 a {
-  pointer-events: none;
+  margin-top: 3.2rem;
+  text-align: justify;
 }
 
 .c4 h1,
@@ -25,39 +18,52 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
 .c4 h4,
 .c4 h5,
 .c4 h6 {
-  margin: 1.6rem 0;
-}
-
-.c4 ol,
-.c4 ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 1.6rem 0;
-}
-
-.c4 ol > li,
-.c4 ul > li {
-  font-style: italic;
+  text-align: center;
 }
 
 .c3 {
   color: #0A1128;
   text-transform: uppercase;
-  font-size: 4.8rem;
+  font-size: 6.4rem;
 }
 
 .c5 {
   font-size: 1.6rem;
   color: #0A1128;
+}
+
+.c5 p {
+  margin: 2.4rem 0;
+}
+
+.c5 a {
+  font-weight: bolder;
+  color: #DC143C;
+}
+
+.c5 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 h1,
+.c5 h2,
+.c5 h3,
+.c5 h4,
+.c5 h5,
+.c5 h6 {
+  margin: 1.6rem 0;
+}
+
+.c5 ol,
+.c5 ul {
+  margin: 1.6rem;
+}
+
+.c5 ol > li,
+.c5 ul > li {
+  margin: 1.6rem 0;
+  font-style: italic;
 }
 
 .c1 {
@@ -83,7 +89,7 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
 
 @media (max-width:768px) {
   .c3 {
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
 }
 
@@ -102,15 +108,15 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
     <div
       class="c2"
     >
-      <h3
+      <h2
         class="c3"
       >
         Layout Center
-      </h3>
+      </h2>
       <div
         class="c4"
       >
-        <p
+        <div
           class="c5"
         >
           
@@ -189,7 +195,7 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
             
   
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   </div>

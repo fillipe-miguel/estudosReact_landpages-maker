@@ -14,7 +14,7 @@ function LayoutGridColumn({ title, text, setBackground, srcImage }) {
           <Heading
             colorDarker={!setBackground}
             size="xxxlarge"
-            level="3"
+            level="2"
             uppercase
           >
             {title}

@@ -6,6 +6,40 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
   color: #0A1128;
 }
 
+.c3 p {
+  margin: 2.4rem 0;
+}
+
+.c3 a {
+  font-weight: bolder;
+  color: #DC143C;
+}
+
+.c3 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3 h1,
+.c3 h2,
+.c3 h3,
+.c3 h4,
+.c3 h5,
+.c3 h6 {
+  margin: 1.6rem 0;
+}
+
+.c3 ol,
+.c3 ul {
+  margin: 1.6rem;
+}
+
+.c3 ol > li,
+.c3 ul > li {
+  margin: 1.6rem 0;
+  font-style: italic;
+}
+
 .c0 {
   height: 8rem;
   text-align: center;
@@ -42,7 +76,7 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2 c3"
     >
       <a
@@ -50,7 +84,7 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
       >
         Teste intenso aqui!
       </a>
-    </p>
+    </div>
   </div>
 </footer>
 `;

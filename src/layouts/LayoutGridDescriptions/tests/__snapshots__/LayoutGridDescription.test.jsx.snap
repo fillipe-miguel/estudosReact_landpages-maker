@@ -18,6 +18,40 @@ exports[`<LayoutGridDescriptions/> Should render with background set 1`] = `
   color: #FFF;
 }
 
+.c5 p {
+  margin: 2.4rem 0;
+}
+
+.c5 a {
+  font-weight: bolder;
+  color: #DC143C;
+}
+
+.c5 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 h1,
+.c5 h2,
+.c5 h3,
+.c5 h4,
+.c5 h5,
+.c5 h6 {
+  margin: 1.6rem 0;
+}
+
+.c5 ol,
+.c5 ul {
+  margin: 1.6rem;
+}
+
+.c5 ol > li,
+.c5 ul > li {
+  margin: 1.6rem 0;
+  font-style: italic;
+}
+
 .c2 {
   margin-bottom: 4.8rem;
 }

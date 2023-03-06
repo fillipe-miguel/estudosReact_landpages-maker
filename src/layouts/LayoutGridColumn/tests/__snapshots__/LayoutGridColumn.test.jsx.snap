@@ -12,6 +12,40 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
   color: #FFF;
 }
 
+.c6 p {
+  margin: 2.4rem 0;
+}
+
+.c6 a {
+  font-weight: bolder;
+  color: #DC143C;
+}
+
+.c6 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6 h1,
+.c6 h2,
+.c6 h3,
+.c6 h4,
+.c6 h5,
+.c6 h6 {
+  margin: 1.6rem 0;
+}
+
+.c6 ol,
+.c6 ul {
+  margin: 1.6rem;
+}
+
+.c6 ol > li,
+.c6 ul > li {
+  margin: 1.6rem 0;
+  font-style: italic;
+}
+
 .c2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -99,11 +133,11 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
       <div
         class="c3"
       >
-        <h3
+        <h2
           class="c4 c5"
         >
           Grid Two columns
-        </h3>
+        </h2>
         <p
           class="c6"
         >
