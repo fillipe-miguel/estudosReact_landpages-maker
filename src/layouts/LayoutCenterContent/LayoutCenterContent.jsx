@@ -19,7 +19,7 @@ function LayoutCenterContent({ title, html, setBackground }) {
           {title}
         </Heading>
         <Styled.InnerHtml>
-          <TextComponent colorDarker={!setBackground}>{html}</TextComponent>
+          <TextComponent asHtml colorDarker={!setBackground}>{html}</TextComponent>
         </Styled.InnerHtml>
       </Styled.LayoutCenterContentRoot>
     </SectionBackground>

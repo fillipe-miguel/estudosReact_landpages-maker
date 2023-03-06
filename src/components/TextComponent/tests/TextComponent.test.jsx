@@ -36,6 +36,32 @@ describe('<TextComponent />', () => {
     });
   });
 
+  // ================================= Teste 03 =================================
+  it('Should render as div when html input content', () => {
+    render(
+      <MyThemeProvider>
+        <TextComponent colorDarker={false} asHtml>
+          Teste
+        </TextComponent>
+      </MyThemeProvider>,
+    );
+
+    const textComponent = screen.getByText('Teste');
+
+    expect(textComponent).toMatchInlineSnapshot(`
+      .c0 {
+        font-size: 1.6rem;
+        color: #FFF;
+      }
+
+      <div
+        class="c0"
+      >
+        Teste
+      </div>
+    `);
+  });
+
   // ================================= Snapshot =================================
   it('Match snapshot', () => {
     const { container } = render(

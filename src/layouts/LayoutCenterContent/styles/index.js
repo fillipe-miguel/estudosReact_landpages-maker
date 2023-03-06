@@ -32,10 +32,7 @@ export const InnerHtml = styled.div`
 
     & ol,
     ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: ${theme.spacings.small} 0;
+      margin: ${theme.spacings.small} ;
     }
 
     & ol > li,
