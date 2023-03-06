@@ -2,7 +2,7 @@
 
 exports[`<LayoutFooter /> Should match snapshot 1`] = `
 .c3 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   color: #0A1128;
 }
 
@@ -26,7 +26,14 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
+  width: 100%;
   padding: 3.2rem;
+}
+
+@media (max-width:768px) {
+  .c1 {
+    padding: 1.6rem;
+  }
 }
 
 <footer
@@ -35,7 +42,7 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
   <div
     class="c1"
   >
-    <div
+    <p
       class="c2 c3"
     >
       <a
@@ -43,7 +50,7 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
       >
         Teste intenso aqui!
       </a>
-    </div>
+    </p>
   </div>
 </footer>
 `;

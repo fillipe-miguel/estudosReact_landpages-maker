@@ -56,13 +56,14 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
 }
 
 .c5 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   color: #0A1128;
 }
 
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
+  width: 100%;
   padding: 3.2rem;
 }
 
@@ -86,6 +87,12 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
   }
 }
 
+@media (max-width:768px) {
+  .c1 {
+    padding: 1.6rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -103,7 +110,7 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
       <div
         class="c4"
       >
-        <div
+        <p
           class="c5"
         >
           
@@ -182,7 +189,7 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
             
   
           </ul>
-        </div>
+        </p>
       </div>
     </div>
   </div>

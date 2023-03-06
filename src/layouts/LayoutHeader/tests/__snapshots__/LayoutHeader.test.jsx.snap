@@ -62,6 +62,7 @@ exports[`<LayoutHeader /> Should not render links 1`] = `
 .c3 {
   max-width: 120rem;
   margin: 0 auto;
+  width: 100%;
   padding: 3.2rem;
 }
 
@@ -124,6 +125,12 @@ exports[`<LayoutHeader /> Should not render links 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    padding: 1.6rem;
   }
 }
 

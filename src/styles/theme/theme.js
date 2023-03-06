@@ -5,7 +5,7 @@ const theme = {
     secondaryColor: '#DC143C',
     mediumGray: '#DDDDDD',
 
-    lightBg: '#FFF',
+    lightBg: '#FFF', 
     darkBg: '#0A1128',
 
     white: '#FFF',

@@ -47,15 +47,15 @@ describe('<TextComponent />', () => {
     // FirstChild para não pegar a div de fora
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
-        font-size: 2.4rem;
+        font-size: 1.6rem;
         color: #0A1128;
       }
 
-      <div
+      <p
         class="c0"
       >
         Teste
-      </div>
+      </p>
     `);
   });
 });

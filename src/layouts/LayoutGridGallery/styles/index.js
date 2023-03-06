@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
 export const Grid = styled.div`
   ${({ theme }) => css`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: ${theme.spacings.medium};
   `}
 `;

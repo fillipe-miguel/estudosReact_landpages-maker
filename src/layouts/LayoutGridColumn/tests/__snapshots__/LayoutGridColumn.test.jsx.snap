@@ -8,7 +8,7 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
 }
 
 .c6 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   color: #FFF;
 }
 
@@ -37,6 +37,7 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
+  width: 100%;
   padding: 3.2rem;
 }
 
@@ -80,6 +81,12 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
   }
 }
 
+@media (max-width:768px) {
+  .c1 {
+    padding: 1.6rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -97,11 +104,11 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
         >
           Grid Two columns
         </h3>
-        <div
+        <p
           class="c6"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit quam iusto aut dignissimos. Eveniet ullam, officia praesentium distinctio eius ut sequi commodi error molestias quibusdam nisi animi, suscipit recusandae.
-        </div>
+        </p>
       </div>
       <div
         class="c7"

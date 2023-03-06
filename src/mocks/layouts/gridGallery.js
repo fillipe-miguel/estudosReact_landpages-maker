@@ -2,7 +2,7 @@ export default {
   setBackground: false,
   title: 'My grid gallery',
   description:
-    'Aqui vai ter várias imagens e coisas legais ablublé ablubléablubléablubléablubléablubléablublé.....',
+    'Aqui vai ter várias imagens e coisas legais e esse texto aqui é para testar a parada da responsividade vem comigo neném',
 
   grid: [
     {

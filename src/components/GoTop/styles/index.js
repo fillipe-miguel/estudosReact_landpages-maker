@@ -6,7 +6,7 @@ export const GoTopRoot = styled.a`
     background-color: ${theme.colors.primaryColor};
     border-radius: 1rem;
     border: 2px solid ${theme.colors.white};
-    bottom: 5rem;
+    bottom: 2rem;
     color: ${theme.colors.white};
     display: flex;
     font-size: ${theme.fonts.sizes.medium};

@@ -9,7 +9,7 @@ exports[`<GoTop /> Should render default 1`] = `
   background-color: #0A1128;
   border-radius: 1rem;
   border: 2px solid #FFF;
-  bottom: 5rem;
+  bottom: 2rem;
   color: #FFF;
   display: -webkit-box;
   display: -webkit-flex;
