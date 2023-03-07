@@ -7,8 +7,8 @@ function PageNotFound() {
   return (
     <styled.PageNotFoundRoot>
       <LayoutCenterContent
-        title="Página não encontrada 😔😔"
-        html="Por favor <a href='#'>Contate</a> o suporte"
+        title="Erro 404 😔😔"
+        html="Por favor <a href='#'>Contate</a> o suporte !!"
         setBackground
       />
     </styled.PageNotFoundRoot>
