@@ -4,7 +4,7 @@ export default {
   title: 'Layouts/LayoutFooter',
   component: LayoutFooter,
   args: {
-    html: '<a href="#">Que loucura isso ❤️ aqui!</a>',
+    footerHtml: '<a href="#">Que loucura isso ❤️ aqui!</a>',
   },
 };
 

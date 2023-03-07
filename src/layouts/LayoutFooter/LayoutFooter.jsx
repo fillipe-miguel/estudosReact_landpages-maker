@@ -6,18 +6,18 @@ import * as Styled from './styles';
 import { TextComponent } from '../../components';
 import { SectionContainer } from '../../sections';
 
-function LayoutFooter({ html }) {
+function LayoutFooter({ footerHtml }) {
   return (
     <Styled.LayoutFooterRoot>
       <SectionContainer>
-        <TextComponent asHtml>{html}</TextComponent>
+        <TextComponent asHtml>{footerHtml}</TextComponent>
       </SectionContainer>
     </Styled.LayoutFooterRoot>
   );
 }
 
 LayoutFooter.propTypes = {
-  html: P.string.isRequired,
+  footerHtml: P.string.isRequired,
 };
 
 export default LayoutFooter;

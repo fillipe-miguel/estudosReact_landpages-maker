@@ -12,7 +12,7 @@ function Base({ links = [], logoData, footerHtml, children }) {
       <Styled.BaseRoot>
         <LayoutHeader links={links} logoData={logoData} />
         {children}
-        <LayoutFooter html={footerHtml} />
+        <LayoutFooter footerHtml={footerHtml} />
       </Styled.BaseRoot>
       <GoTop />
     </>

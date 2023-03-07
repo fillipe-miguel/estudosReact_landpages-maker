@@ -8,7 +8,7 @@ describe('<LayoutFooter />', () => {
   it('Should match snapshot', () => {
     const { container } = render(
       <MyThemeProvider>
-        <LayoutFooter html={'<a href="#">Teste intenso aqui!</a>'} />
+        <LayoutFooter footerHtml={'<a href="#">Teste intenso aqui!</a>'} />
       </MyThemeProvider>,
     );
 
