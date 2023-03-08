@@ -110,7 +110,7 @@ export default function mapSections(sectionsDada) {
         return section;
 
       case 'section.section-two-columns':
-        return mapLayoutCenterContent(section);
+        return mapLayoutGridColumn(section);
 
       default:
         return section;

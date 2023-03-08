@@ -27,7 +27,7 @@ describe('map-sections', () => {
   });
   it('Should map (section-two-columns) as (layout-grid-column) with content', () => {
     // Aqui estou passando só a section certa
-    const data = mapLayoutGridColumn(pageDataMock[0].sections[0]);
+    const data = mapLayoutGridColumn(pageDataMock[0].attributes.sections[0]);
 
     expect(data.component).toBe('layout-grid-column');
     expect(data.layoutId).toBe('section-two-columns');
@@ -49,7 +49,7 @@ describe('map-sections', () => {
   });
   it('should map (section-content) as (layout-center-content) with content', () => {
     // Aqui estou passando só a section certa
-    const data = mapLayoutCenterContent(pageDataMock[0].sections[1]);
+    const data = mapLayoutCenterContent(pageDataMock[0].attributes.sections[1]);
 
     expect(data.component).toBe('layout-center-content');
     expect(data.html).toBe('lorem lorem lorem lorem lorem');
@@ -71,7 +71,7 @@ describe('map-sections', () => {
   });
   it('Should map (section-grid-text) as (layout-grid-description) with content', () => {
     // Aqui estou passando só a section certa
-    const data = mapLayoutGridDescription(pageDataMock[0].sections[2]);
+    const data = mapLayoutGridDescription(pageDataMock[0].attributes.sections[2]);
 
     expect(data.component).toBe('layout-grid-description');
     expect(data.description).toBe('Vários textos ai olha que loucura!');
@@ -97,7 +97,7 @@ describe('map-sections', () => {
   });
   it('should map (section-grid-image) as (layout-grid-gallery) with content', () => {
     // Aqui estou passando só a section certa
-    const data = mapLayoutGridGallery(pageDataMock[0].sections[3]);
+    const data = mapLayoutGridGallery(pageDataMock[0].attributes.sections[3]);
 
     expect(data.component).toBe('layout-grid-gallery');
     expect(data.description).toBe(
