@@ -11,8 +11,7 @@ export const LayoutCenterContentRoot = styled.div`
 export const InnerHtml = styled.div`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.large};
-    text-align: justify;
-
+    
     & h1,
     h2,
     h3,

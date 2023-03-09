@@ -34,8 +34,7 @@ function Home() {
       logoData={{
         text: header.text,
         link: header.link,
-        // TODO: arrumar isso aqui !!!!
-        // srcImage: header.srcImage,
+        srcImage: header.srcImage,
       }}
       footerHtml={footerHtml}
     >

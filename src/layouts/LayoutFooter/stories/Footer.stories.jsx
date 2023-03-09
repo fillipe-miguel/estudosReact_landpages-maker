@@ -4,7 +4,8 @@ export default {
   title: 'Layouts/LayoutFooter',
   component: LayoutFooter,
   args: {
-    footerHtml: '<a href="#">Que loucura isso ❤️ aqui!</a>',
+    footerHtml:
+      "<p>Feito com ❤️ por : <strong>Fillipe Miguel</strong></p> <p>Assece o <a href='#linkedin' target='_blank'>linkedin</a></p>",
   },
 };
 

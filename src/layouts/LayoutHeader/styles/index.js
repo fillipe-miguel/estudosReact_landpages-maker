@@ -11,8 +11,8 @@ export const LayoutHeaderRoot = styled.header`
   left: 0;
 
   & > ${SectionContainerStyles.SectionContainerRoot} {
-    padding-top: ${({theme}) => theme.spacings.small};
-    padding-bottom: ${({theme}) => theme.spacings.small};;
+    padding-top: ${({ theme }) => theme.spacings.small};
+    padding-bottom: ${({ theme }) => theme.spacings.small};
   }
 
   ${({ theme }) => css`
@@ -49,6 +49,7 @@ export const LayoutHeaderRoot = styled.header`
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
+
   justify-content: space-between;
 
   // ================================= MEDIAS  =================================
@@ -56,6 +57,7 @@ export const HeaderContainer = styled.div`
     @media ${theme.medias.lteMedium} {
       display: flex;
       flex-direction: column;
+      gap: 3rem;
       text-align: center;
       padding: ${theme.spacings.xxlarge};
     }

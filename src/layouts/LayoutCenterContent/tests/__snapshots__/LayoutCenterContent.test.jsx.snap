@@ -9,7 +9,6 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
 
 .c4 {
   margin-top: 3.2rem;
-  text-align: justify;
 }
 
 .c4 h1,
@@ -24,6 +23,7 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
 .c3 {
   color: #0A1128;
   text-transform: uppercase;
+  margin-bottom: 3.2rem;
   font-size: 6.4rem;
 }
 
@@ -95,7 +95,7 @@ exports[`<LayoutCenterContent /> Should render with background set 1`] = `
 
 @media (max-width:768px) {
   .c1 {
-    padding-inline: 1.6rem;
+    padding-inline: 3.2rem;
   }
 }
 

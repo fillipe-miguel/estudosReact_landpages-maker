@@ -34,6 +34,7 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
 .c3 {
   color: #FFF;
   text-transform: uppercase;
+  margin-bottom: 3.2rem;
   font-size: 4.8rem;
 }
 
@@ -100,6 +101,18 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
 }
 
 @media (max-width:768px) {
+  .c2 {
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c5 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:768px) {
   .c3 {
     font-size: 4.8rem;
   }
@@ -107,7 +120,7 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
 
 @media (max-width:768px) {
   .c1 {
-    padding-inline: 1.6rem;
+    padding-inline: 3.2rem;
   }
 }
 

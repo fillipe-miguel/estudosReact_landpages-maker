@@ -14,3 +14,15 @@ export default {
 export function Render01(args) {
   return <LayoutHeader {...args} />;
 }
+
+export function Render02(args) {
+  return (
+    <LayoutHeader
+      {...args}
+      logoData={{
+        ...mocks.components.logoData,
+        srcImage: '/public/assets/images/logo.svg',
+      }}
+    />
+  );
+}

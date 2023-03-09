@@ -12,7 +12,7 @@ describe('map-header', () => {
 
   // ================================= Teste com dados =================================
   it('Should return a header with data ', () => {
-    const header = mapHeader(pageDataMock[0].menu);
+    const header = mapHeader(pageDataMock[0].attributes.menu);
     expect(header.link).toBe('#link-teste');
     expect(header.text).toBe('LOGO TESTE');
     expect(header.srcImage).toBe('https://url-da-imagem_teste.svg');

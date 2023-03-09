@@ -4,6 +4,7 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
 .c5 {
   color: #FFF;
   text-transform: uppercase;
+  margin-bottom: 3.2rem;
   font-size: 6.4rem;
 }
 
@@ -68,6 +69,10 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
   max-width: 74rem;
 }
 
+.c8 {
+  max-width: 100%;
+}
+
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
@@ -99,7 +104,6 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
 
 @media (max-width:768px) {
   .c2 {
-    text-align: center;
     grid-template-columns: 1fr;
   }
 
@@ -111,13 +115,14 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
 @media (max-width:768px) {
   .c3 {
     min-width: auto;
+    text-align: center;
     margin-bottom: 3.2rem;
   }
 }
 
 @media (max-width:768px) {
   .c1 {
-    padding-inline: 1.6rem;
+    padding-inline: 3.2rem;
   }
 }
 
@@ -141,7 +146,7 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
         <p
           class="c6"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit quam iusto aut dignissimos. Eveniet ullam, officia praesentium distinctio eius ut sequi commodi error molestias quibusdam nisi animi, suscipit recusandae.
+          Teste
         </p>
       </div>
       <div
@@ -149,7 +154,7 @@ exports[`<LayoutGridColum /> should match snapshot 1`] = `
       >
         <img
           alt="Grid Two columns"
-          class=""
+          class="c8"
           src="public/assets/images/javascript.svg"
         />
       </div>

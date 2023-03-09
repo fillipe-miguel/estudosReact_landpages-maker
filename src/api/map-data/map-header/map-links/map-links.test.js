@@ -12,7 +12,7 @@ describe('map-links', () => {
 
   // ================================= Teste com dados =================================
   it('Should return a header with data ', () => {
-    const links = mapLinks(pageDataMock[0].menu.menu_link)[0];
+    const links = mapLinks(pageDataMock[0].attributes.menu.menu_link)[0];
     expect(links.children).toBe('Text do link test');
     expect(links.link).toBe('#link-test');
     expect(links.newTab).toBe(true);

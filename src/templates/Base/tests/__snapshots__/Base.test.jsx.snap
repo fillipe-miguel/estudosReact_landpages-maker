@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Base /> Should match snapshot 1`] = `
-.c27 {
+.c28 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -30,7 +30,7 @@ exports[`<Base /> Should match snapshot 1`] = `
   width: 4rem;
 }
 
-.c27:hover {
+.c28:hover {
   opacity: 1;
   border-color: #DC143C;
   box-shadow: 0px 0px 8px 1px #DC143C;
@@ -42,7 +42,7 @@ exports[`<Base /> Should match snapshot 1`] = `
   transition: all 0.3s ease-in-out;
 }
 
-.c27:hover > :first-child {
+.c28:hover > :first-child {
   -webkit-animation: shakeUpDown 0.7s ease-in-out infinite;
   animation: shakeUpDown 0.7s ease-in-out infinite;
 }
@@ -50,18 +50,21 @@ exports[`<Base /> Should match snapshot 1`] = `
 .c8 {
   color: #0A1128;
   text-transform: uppercase;
+  margin-bottom: 3.2rem;
   font-size: 2.4rem;
 }
 
 .c13 {
   color: #FFF;
   text-transform: uppercase;
+  margin-bottom: 3.2rem;
   font-size: 6.4rem;
 }
 
 .c19 {
   color: #0A1128;
   text-transform: uppercase;
+  margin-bottom: 3.2rem;
   font-size: 4.8rem;
 }
 
@@ -70,14 +73,12 @@ exports[`<Base /> Should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 > img {
-  max-height: 3rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 8rem;
+  width: 20rem;
 }
 
 .c10 {
@@ -203,7 +204,6 @@ exports[`<Base /> Should match snapshot 1`] = `
 
 .c14 {
   margin-top: 3.2rem;
-  text-align: justify;
 }
 
 .c14 h1,
@@ -252,20 +252,24 @@ exports[`<Base /> Should match snapshot 1`] = `
   color: #0A1128;
 }
 
-.c26 {
-  height: 8rem;
+.c27 {
+  min-height: 8rem;
   text-align: center;
   background-color: #FFF;
   border-top: 1px solid #DDDDDD;
 }
 
-.c26 .c15 {
+.c27 .c15 {
   font-size: 1.6rem;
 }
 
-.c26 .c3 {
-  padding-top: 0;
-  padding-bottom: 0;
+.c27 .c15 p {
+  margin: 0;
+}
+
+.c27 .c3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c23 {
@@ -288,6 +292,10 @@ exports[`<Base /> Should match snapshot 1`] = `
 
 .c25 {
   max-width: 74rem;
+}
+
+.c26 {
+  max-width: 100%;
 }
 
 .c18 {
@@ -364,10 +372,6 @@ exports[`<Base /> Should match snapshot 1`] = `
   color: #FFF;
 }
 
-.c0 {
-  padding-top: 9rem;
-}
-
 @media (max-width:768px) {
   .c8 {
     font-size: 2.4rem;
@@ -400,13 +404,12 @@ exports[`<Base /> Should match snapshot 1`] = `
 
 @media (max-width:768px) {
   .c4 {
-    padding-inline: 1.6rem;
+    padding-inline: 3.2rem;
   }
 }
 
 @media (max-width:768px) {
   .c23 {
-    text-align: center;
     grid-template-columns: 1fr;
   }
 
@@ -418,7 +421,20 @@ exports[`<Base /> Should match snapshot 1`] = `
 @media (max-width:768px) {
   .c24 {
     min-width: auto;
+    text-align: center;
     margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c18 {
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c21 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -457,6 +473,7 @@ exports[`<Base /> Should match snapshot 1`] = `
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 3rem;
     text-align: center;
     padding: 4.8rem;
   }
@@ -766,7 +783,7 @@ exports[`<Base /> Should match snapshot 1`] = `
             <p
               class="c15 c16"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit quam iusto aut dignissimos. Eveniet ullam, officia praesentium distinctio eius ut sequi commodi error molestias quibusdam nisi animi, suscipit recusandae.
+              Teste
             </p>
           </div>
           <div
@@ -774,7 +791,7 @@ exports[`<Base /> Should match snapshot 1`] = `
           >
             <img
               alt="Grid Two columns"
-              class=""
+              class="c26"
               src="public/assets/images/javascript.svg"
             />
           </div>
@@ -856,7 +873,7 @@ exports[`<Base /> Should match snapshot 1`] = `
       </div>
     </div>
     <footer
-      class="c26"
+      class="c27"
     >
       <div
         class="c3 c4"
@@ -873,7 +890,7 @@ exports[`<Base /> Should match snapshot 1`] = `
   </div>
   <a
     aria-label="Button go to top"
-    class="c27"
+    class="c28"
     href="#"
     title="Voltar ao topo"
   >

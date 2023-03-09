@@ -48,7 +48,7 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
 }
 
 .c0 {
-  height: 8rem;
+  min-height: 8rem;
   text-align: center;
   background-color: #FFF;
   border-top: 1px solid #DDDDDD;
@@ -58,14 +58,18 @@ exports[`<LayoutFooter /> Should match snapshot 1`] = `
   font-size: 1.6rem;
 }
 
+.c0 .c3 p {
+  margin: 0;
+}
+
 .c0 .c1 {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (max-width:768px) {
   .c2 {
-    padding-inline: 1.6rem;
+    padding-inline: 3.2rem;
   }
 }
 

@@ -8,7 +8,7 @@ export const HeadingRoot = styled.h1`
       : theme.colors.white};
 
     text-transform: ${props.uppercase ? 'uppercase' : 'none'};
-
+    margin-bottom: ${theme.spacings.large};
     font-size: ${theme.fonts.sizes[props.size]};
   `}
 

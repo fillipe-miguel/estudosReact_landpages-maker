@@ -24,7 +24,7 @@ exports[`<SectionBackground /> should match to snapshot 1`] = `
 
 @media (max-width:768px) {
   .c1 {
-    padding-inline: 1.6rem;
+    padding-inline: 3.2rem;
   }
 }
 

@@ -3,6 +3,10 @@ import styled, { css } from 'styled-components';
 export const HeaderContainer = styled.div`
   ${({ theme }) => css`
     margin-bottom: ${theme.spacings.xxlarge};
+
+    @media ${theme.medias.lteMedium} {
+      text-align: center;
+    }
   `}
 `;
 
@@ -11,6 +15,10 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: ${theme.spacings.medium};
+
+    @media ${theme.medias.lteMedium} {
+      grid-template-columns: 1fr;
+    }
   `}
 `;
 

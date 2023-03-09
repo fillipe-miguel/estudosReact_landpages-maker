@@ -17,7 +17,6 @@ export const LayoutGridColumnRoot = styled.div`
   // ================================= Medias =================================
   ${({ theme }) => css`
     @media ${theme.medias.lteMedium} {
-      text-align: center;
       grid-template-columns: 1fr;
 
       & ${HeadingStyles.HeadingRoot} {
@@ -36,6 +35,7 @@ export const TextContainer = styled.div`
   ${({ theme }) => css`
     @media ${theme.medias.lteMedium} {
       min-width: auto;
+      text-align: center;
       margin-bottom: ${theme.spacings.large};
     }
   `}

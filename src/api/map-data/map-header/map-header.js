@@ -5,7 +5,7 @@ export default function mapHeader(dataHeader) {
     return {
       link: dataHeader.logo_link,
       text: dataHeader.logo_text,
-      srcImage: dataHeader.logo.data.attributes.url,
+      srcImage: dataHeader.logo.data != null ? dataHeader.logo.data.attributes.url : '',
       links: mapLinks(dataHeader.menu_link),
     };
   }

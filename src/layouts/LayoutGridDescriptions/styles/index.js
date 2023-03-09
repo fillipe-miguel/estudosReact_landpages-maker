@@ -5,6 +5,10 @@ import { HeadingStyles } from '../../../components';
 export const HeaderContainer = styled.div`
   ${({ theme }) => css`
     margin-bottom: ${theme.spacings.xxlarge};
+
+    @media ${theme.medias.lteMedium} {
+      text-align: center;
+    }
   `}
 `;
 
@@ -14,6 +18,11 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: ${theme.spacings.large};
+
+    @media ${theme.medias.lteMedium} {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
   `}
 `;
 
@@ -24,6 +33,11 @@ export const GridElement = styled.div`
       width: fit-content;
       left: 5rem;
       margin: ${theme.spacings.medium} 0;
+
+      @media ${theme.medias.lteMedium} {
+        left: 2rem;
+        margin: ${theme.spacings.medium} auto;
+      }
     }
 
     & ${HeadingStyles.HeadingRoot}::before {
