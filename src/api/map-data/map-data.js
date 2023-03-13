@@ -2,7 +2,7 @@ import mapHeader from './map-header/map-header';
 import mapSections from './map-sections/map-sections';
 
 export default function mapData(pagesData) {
-  if (pagesData) {
+  if (pagesData.length > 0) {
     return pagesData.map((data) => ({
       slug: data.attributes.slug,
       title: data.attributes.title,
@@ -13,14 +13,16 @@ export default function mapData(pagesData) {
     }));
   }
 
+  return undefined;
+
   // ================================= Retorno Padrão =================================
-  return [
-    {
-      slug: '',
-      title: '',
-      header: {},
-      sections: [],
-      footerHtml: '',
-    },
-  ];
+  // return [
+  //   {
+  //     slug: '',
+  //     title: '',
+  //     header: {},
+  //     sections: [],
+  //     footerHtml: '',
+  //   },
+  // ];
 }

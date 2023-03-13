@@ -6,10 +6,8 @@ import { pageDataMock } from './mocks';
 
 describe('map-data', () => {
   it('Should map data even if there is no data', () => {
-    const pagesData = mapData()[0];
-    expect(pagesData.footerHtml).toBe('');
-    expect(pagesData.title).toBe('');
-    expect(pagesData.slug).toBe('');
+    const pagesData = mapData([]);
+    expect(pagesData).toBeUndefined();
   });
 
   it('Should map data even if there is data', () => {

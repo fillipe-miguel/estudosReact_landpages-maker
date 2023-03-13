@@ -1,13 +1,13 @@
 import { mapData } from '../map-data';
 
-export default async function loadPageData(pageNumber, callBack) {
-  const URL = `http://localhost:1337/api/pages/${pageNumber}?populate=deep`;
+export default async function loadPageData(slug, callBack) {
+  // const URL = `http://localhost:1337/api/pages/${pageNumber}?populate=deep`;
+  const URL_NEW = `http://localhost:1337/api/pages/?filters[slug]=${slug}&populate=deep`;
 
   try {
-    const raw = await fetch(URL);
+    const raw = await fetch(URL_NEW);
     const json = await raw.json();
-    // Passando dentro de um array pois a função espera um array
-    const dataArray = mapData([json.data]);
+    const dataArray = mapData(json.data);
     callBack(dataArray[0]);
   } catch (err) {
     callBack(undefined);
