@@ -17,11 +17,9 @@ function Home() {
   const pathName = useLocation().pathname.replace(/[^a-z0-9-_]/gi, '');
   const slug = pathName || 'pagina-teste';
 
-  console.log('🚀 ~ file: Home.jsx:18 ~ Home ~ pathname:', slug);
-
   useEffect(() => {
     loadPagaData(slug, setData);
-  }, []);
+  }, [slug]);
 
   if (data && !data.slug) {
     return <Loading />;

@@ -17,4 +17,12 @@ describe('map-header', () => {
     expect(header.text).toBe('LOGO TESTE');
     expect(header.srcImage).toBe('https://url-da-imagem_teste.svg');
   });
+
+  // ================================= Teste com dados mas imagem null =================================
+  it('Should return a header with data ', () => {
+    const header = mapHeader({ ...pageDataMock[0].attributes.menu, logo: {} });
+    expect(header.link).toBe('#link-teste');
+    expect(header.text).toBe('LOGO TESTE');
+    expect(header.srcImage).toBe('');
+  });
 });
