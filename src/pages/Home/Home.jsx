@@ -15,11 +15,19 @@ import {
 function Home() {
   const [data, setData] = useState([]);
   const pathName = useLocation().pathname.replace(/[^a-z0-9-_]/gi, '');
-  const slug = pathName || 'pagina-teste';
+  const slug = pathName || 'home-page';
 
   useEffect(() => {
     loadPagaData(slug, setData);
   }, [slug]);
+
+  useEffect(() => {
+    if (data && !data.slug) document.title = 'Carregando...';
+
+    if (data === undefined) document.title = 'Página não encontrada!';
+
+    if (data && data.title) document.title = data.title;
+  }, [data]);
 
   if (data && !data.slug) {
     return <Loading />;
