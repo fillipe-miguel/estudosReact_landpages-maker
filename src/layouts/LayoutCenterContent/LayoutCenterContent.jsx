@@ -6,9 +6,9 @@ import * as Styled from './styles';
 import { Heading, TextComponent } from '../../components';
 import { SectionBackground } from '../../sections';
 
-function LayoutCenterContent({ title, html, setBackground }) {
+function LayoutCenterContent({ title, html, setBackground, layoutId }) {
   return (
-    <SectionBackground setBackground={setBackground}>
+    <SectionBackground layoutId={layoutId} setBackground={setBackground}>
       <Styled.LayoutCenterContentRoot>
         <Heading
           size="xxxlarge"
@@ -34,6 +34,7 @@ LayoutCenterContent.propTypes = {
   title: P.string.isRequired,
   html: P.string.isRequired,
   setBackground: P.bool,
+  layoutId: P.string.isRequired
 };
 
 export default LayoutCenterContent;

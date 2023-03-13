@@ -126,6 +126,7 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
 
 <div
   class="c0"
+  id="teste"
 >
   <div
     class="c1"

@@ -6,9 +6,9 @@ import * as Styled from './styles';
 import { Heading, TextComponent } from '../../components';
 import { SectionBackground } from '../../sections';
 
-function LayoutGridColumn({ title, text, setBackground, srcImage }) {
+function LayoutGridColumn({ title, text, setBackground, srcImage, layoutId }) {
   return (
-    <SectionBackground setBackground={setBackground}>
+    <SectionBackground layoutId={layoutId} setBackground={setBackground}>
       <Styled.LayoutGridColumnRoot>
         <Styled.TextContainer>
           <Heading
@@ -39,6 +39,7 @@ LayoutGridColumn.propTypes = {
   title: P.string.isRequired,
   srcImage: P.string.isRequired,
   setBackground: P.bool,
+  layoutId: P.string.isRequired,
 };
 
 export default LayoutGridColumn;

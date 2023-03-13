@@ -1,5 +1,6 @@
 export default {
   title: 'My grid',
+  layoutId: 'teste',
   description:
     'Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde',
   grid: [

@@ -590,6 +590,7 @@ exports[`<Base /> Should match snapshot 1`] = `
     </header>
     <div
       class="c11"
+      id="teste"
     >
       <div
         class="c3 c4"
@@ -691,6 +692,7 @@ exports[`<Base /> Should match snapshot 1`] = `
     </div>
     <div
       class="c17"
+      id="teste"
     >
       <div
         class="c3 c4"
@@ -765,6 +767,7 @@ exports[`<Base /> Should match snapshot 1`] = `
     </div>
     <div
       class="c11"
+      id="teste"
     >
       <div
         class="c3 c4"
@@ -800,6 +803,7 @@ exports[`<Base /> Should match snapshot 1`] = `
     </div>
     <div
       class="c17"
+      id="teste"
     >
       <div
         class="c3 c4"

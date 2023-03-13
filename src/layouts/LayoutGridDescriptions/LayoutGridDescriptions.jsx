@@ -6,9 +6,15 @@ import * as Styled from './styles';
 import { Heading, TextComponent } from '../../components';
 import { SectionBackground } from '../../sections';
 
-function LayoutGridDescriptions({ title, description, setBackground, grid }) {
+function LayoutGridDescriptions({
+  title,
+  description,
+  setBackground,
+  grid,
+  layoutId,
+}) {
   return (
-    <SectionBackground setBackground={setBackground}>
+    <SectionBackground layoutId={layoutId} setBackground={setBackground}>
       <Styled.HeaderContainer>
         <Heading
           uppercase
@@ -52,6 +58,7 @@ LayoutGridDescriptions.propTypes = {
       description: P.string.isRequired,
     }),
   ).isRequired,
+  layoutId: P.string.isRequired,
 };
 
 export default LayoutGridDescriptions;

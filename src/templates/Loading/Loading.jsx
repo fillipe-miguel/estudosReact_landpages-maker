@@ -7,7 +7,7 @@ import * as styled from './styles';
 
 function Loading() {
   return (
-    <SectionBackground setBackground>
+    <SectionBackground layoutId='loading-screen' setBackground>
       <styled.LoadingRoot>
         <Heading level="1" size="large" uppercase colorDarker={false}>
           Carregando...

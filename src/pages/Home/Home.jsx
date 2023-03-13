@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { loadPagaData } from '../../api';
 
@@ -13,12 +14,14 @@ import {
 
 function Home() {
   const [data, setData] = useState([]);
+  const pathName = useLocation().pathname.replace(/[^a-z0-9-_]/gi, '');
+  const slug = pathName || 'pagina-teste';
+
+  console.log('🚀 ~ file: Home.jsx:18 ~ Home ~ pathname:', slug);
 
   useEffect(() => {
-    loadPagaData(3, setData);
+    loadPagaData(slug, setData);
   }, []);
-
-  const { footerHtml, header, sections } = data;
 
   if (data && !data.slug) {
     return <Loading />;
@@ -27,6 +30,9 @@ function Home() {
   if (data === undefined) {
     return <PageNotFound />;
   }
+
+  // Isso esta aqui em baixo pois caso nao retorne dados do server ele vem undefined!!!
+  const { footerHtml, header, sections } = data;
 
   return (
     <Base
@@ -43,44 +49,44 @@ function Home() {
           case 'layout-center-content':
             return (
               <LayoutCenterContent
-                key={section.layoutId}
-                id={section.layoutId}
-                title={section.title}
                 html={section.html}
+                key={section.layoutId}
+                layoutId={section.layoutId}
                 setBackground={section.setBackground}
+                title={section.title}
               />
             );
           case 'layout-grid-description':
             return (
               <LayoutGridDescriptions
-                id={section.layoutId}
-                key={section.layoutId}
-                title={section.title}
                 description={section.description}
-                setBackground={section.setBackground}
                 grid={section.grid}
+                key={section.layoutId}
+                layoutId={section.layoutId}
+                setBackground={section.setBackground}
+                title={section.title}
               />
             );
           case 'layout-grid-gallery':
             return (
               <LayoutGridGallery
-                id={section.layoutId}
-                key={section.layoutId}
-                title={section.title}
                 description={section.description}
-                setBackground={section.setBackground}
                 grid={section.grid}
+                key={section.layoutId}
+                layoutId={section.layoutId}
+                setBackground={section.setBackground}
+                title={section.title}
               />
             );
           case 'layout-grid-column':
             return (
               <LayoutGridColumn
                 key={section.layoutId}
-                id={section.layoutId}
-                title={section.title}
-                text={section.text}
+                layoutId={section.layoutId}
                 setBackground={section.setBackground}
                 srcImage={section.srcImage}
+                text={section.text}
+                title={section.title}
               />
             );
           default:

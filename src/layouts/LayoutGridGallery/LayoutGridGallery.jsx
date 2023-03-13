@@ -6,9 +6,15 @@ import * as Styled from './styles';
 import { Heading, TextComponent } from '../../components';
 import { SectionBackground } from '../../sections';
 
-function LayoutGridGallery({ title, description, setBackground, grid }) {
+function LayoutGridGallery({
+  title,
+  description,
+  setBackground,
+  grid,
+  layoutId,
+}) {
   return (
-    <SectionBackground setBackground={setBackground}>
+    <SectionBackground layoutId={layoutId} setBackground={setBackground}>
       <Styled.HeaderContainer>
         <Heading
           uppercase
@@ -47,6 +53,7 @@ LayoutGridGallery.propTypes = {
       altText: P.string.isRequired,
     }),
   ).isRequired,
+  layoutId: P.string.isRequired,
 };
 
 export default LayoutGridGallery;
