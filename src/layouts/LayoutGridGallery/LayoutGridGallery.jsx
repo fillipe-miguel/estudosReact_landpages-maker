@@ -24,7 +24,7 @@ function LayoutGridGallery({
         >
           {title}
         </Heading>
-        <TextComponent colorDarker={!setBackground}>
+        <TextComponent asHtml colorDarker={!setBackground}>
           {description}
         </TextComponent>
       </Styled.HeaderContainer>

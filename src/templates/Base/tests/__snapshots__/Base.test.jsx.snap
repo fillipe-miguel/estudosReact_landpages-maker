@@ -77,8 +77,12 @@ exports[`<Base /> Should match snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  max-width: 23rem;
   max-height: 8rem;
-  width: 20rem;
+}
+
+.c6 img {
+  width: 100%;
 }
 
 .c10 {
@@ -273,8 +277,14 @@ exports[`<Base /> Should match snapshot 1`] = `
 }
 
 .c23 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -287,11 +297,11 @@ exports[`<Base /> Should match snapshot 1`] = `
 }
 
 .c24 {
-  min-width: 35rem;
+  max-width: 35rem;
 }
 
 .c25 {
-  max-width: 74rem;
+  max-width: 64rem;
 }
 
 .c26 {
@@ -410,7 +420,9 @@ exports[`<Base /> Should match snapshot 1`] = `
 
 @media (max-width:768px) {
   .c23 {
-    grid-template-columns: 1fr;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .c23 .c7 {
@@ -705,11 +717,11 @@ exports[`<Base /> Should match snapshot 1`] = `
           >
             My grid gallery
           </h2>
-          <p
+          <div
             class="c15 c20"
           >
             Aqui vai ter várias imagens e coisas legais e esse texto aqui é para testar a parada da responsividade vem comigo neném
-          </p>
+          </div>
         </div>
         <div
           class="c21"
@@ -816,11 +828,11 @@ exports[`<Base /> Should match snapshot 1`] = `
           >
             My grid gallery
           </h2>
-          <p
+          <div
             class="c15 c20"
           >
             Aqui vai ter várias imagens e coisas legais e esse texto aqui é para testar a parada da responsividade vem comigo neném
-          </p>
+          </div>
         </div>
         <div
           class="c21"

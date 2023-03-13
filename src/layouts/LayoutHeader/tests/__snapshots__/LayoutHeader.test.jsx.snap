@@ -17,8 +17,12 @@ exports[`<LayoutHeader /> Should not render links 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  max-width: 23rem;
   max-height: 8rem;
-  width: 20rem;
+}
+
+.c5 img {
+  width: 100%;
 }
 
 .c9 {

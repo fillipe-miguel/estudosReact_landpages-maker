@@ -10,8 +10,12 @@ exports[`<LogoLink/> should match snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  max-width: 23rem;
   max-height: 8rem;
-  width: 20rem;
+}
+
+.c0 img {
+  width: 100%;
 }
 
 .c1 {

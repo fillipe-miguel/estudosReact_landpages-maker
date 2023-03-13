@@ -139,11 +139,11 @@ exports[`<LayoutGridGallery/> Should render with background set 1`] = `
       >
         My grid gallery
       </h2>
-      <p
+      <div
         class="c4"
       >
         Aqui vai ter várias imagens e coisas legais e esse texto aqui é para testar a parada da responsividade vem comigo neném
-      </p>
+      </div>
     </div>
     <div
       class="c5"

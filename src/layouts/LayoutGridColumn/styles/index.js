@@ -4,9 +4,10 @@ import { HeadingStyles } from '../../../components';
 
 export const LayoutGridColumnRoot = styled.div`
   ${({ theme }) => css`
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: center;
     align-items: center;
+
     gap: ${theme.spacings.xxlarge};
 
     & ${HeadingStyles.HeadingRoot} {
@@ -17,7 +18,7 @@ export const LayoutGridColumnRoot = styled.div`
   // ================================= Medias =================================
   ${({ theme }) => css`
     @media ${theme.medias.lteMedium} {
-      grid-template-columns: 1fr;
+      flex-direction: column;
 
       & ${HeadingStyles.HeadingRoot} {
         margin-bottom: ${theme.spacings.xlarge};
@@ -28,7 +29,7 @@ export const LayoutGridColumnRoot = styled.div`
 
 export const TextContainer = styled.div`
   ${() => css`
-    min-width: 35rem;
+    max-width: 35rem;
   `}
 
   // ================================= Medias =================================
@@ -43,7 +44,7 @@ export const TextContainer = styled.div`
 
 export const ImageContainer = styled.div`
   ${() => css`
-    max-width: 74rem;
+    max-width: 64rem;
   `}
 `;
 
